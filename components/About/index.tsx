@@ -22,12 +22,12 @@ const socialFeatures = [
 
 const About = () => {
   return (
-    <div className="py-16 overflow-hidden bg-dark-400 lg:py-24">
+    <div className="py-16 overflow-hidden bg-dark-400 lg:py-24" id="about">
       <div className="max-w-xl px-4 mx-auto sm:px-6 lg:px-8 lg:max-w-7xl">
         <h2 className="text-3xl italic font-extrabold leading-8 tracking-tight uppercase md:text-center text-gray-50 sm:text-5xl">
           Welcome to The Nest
         </h2>
-        <p className="max-w-3xl mx-auto mt-4 text-lg text-gray-300 md:text-center md:text-lg">
+        <p className="max-w-3xl mx-auto mt-4 text-lg text-gray-300 md:text-center">
           In a world where humans are no more. Some weird birds have survived,
           and for better or worse, they have discovered and adopted human
           culture.
@@ -35,7 +35,7 @@ const About = () => {
           <br />
           They now like to hang out in a place called The Nest, to relax, have a
           drink, hang out with friends, throw parties or events, well, it&apos;s
-          a place to have fun and cheer up...
+          a place to have fun and cheer up ...
         </p>
 
         <div className="mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
@@ -43,7 +43,7 @@ const About = () => {
             <h3 className="text-2xl italic font-extrabold tracking-tight lowercase text-gray-50 sm:text-3xl">
               What are those ?
             </h3>
-            <p className="mt-3 text-base text-gray-300 md:text-lg">
+            <p className="mt-3 text-lg text-gray-300">
               Crappy Birds is an NFT collection made of 9,000 unique birds,
               <br />
               randomly generated from over 160 attributes across 10 categories.

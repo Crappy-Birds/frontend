@@ -4,12 +4,12 @@ import { FaDiscord, FaTwitter } from 'react-icons/fa'
 const navigation = [
   {
     name: 'Discord',
-    href: '#',
+    href: 'https://discord.gg/jvJP4YYHFV',
     icon: FaDiscord,
   },
   {
     name: 'Twitter',
-    href: '#',
+    href: 'https://twitter.com/crappybirds',
     icon: FaTwitter,
   },
 ]
@@ -24,6 +24,8 @@ const Footer = ({}) => {
               key={item.name}
               href={item.href}
               className="text-gray-400 hover:text-gray-500"
+              target="_blank"
+              rel="noreferrer"
             >
               <span className="sr-only">{item.name}</span>
               <item.icon className="w-5 h-5" aria-hidden="true" />

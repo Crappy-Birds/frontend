@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const Mint = () => {
   return (
-    <div className="py-16 overflow-hidden bg-dark-500 lg:py-24">
+    <div className="py-16 overflow-hidden bg-dark-500 lg:py-24" id="mint">
       <div className="max-w-xl px-4 mx-auto sm:px-6 lg:px-8 lg:max-w-7xl">
         <div className="flex flex-wrap px-4 sm:px-0">
           <div className="w-full sm:w-1/2">

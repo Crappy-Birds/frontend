@@ -58,7 +58,7 @@ function classNames(...classes: string[]) {
 
 const Roadmap = ({}) => {
   return (
-    <div className="py-16 overflow-hidden bg-dark-400 lg:py-24">
+    <div className="py-16 overflow-hidden bg-dark-400 lg:py-24" id="roadmap">
       <div className="max-w-xl px-4 mx-auto sm:px-6 lg:px-8 lg:max-w-7xl">
         <h2 className="px-4 text-3xl italic font-extrabold leading-8 tracking-tight uppercase sm:px-0 md:text-center text-gray-50 sm:text-5xl">
           Roadmap

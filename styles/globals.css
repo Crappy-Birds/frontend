@@ -28,4 +28,8 @@
   body {
     @apply text-sm font-primary md:text-base bg-dark-500 text-gray-50;
   }
+
+  :root {
+    scroll-behavior: smooth;
+  }
 }

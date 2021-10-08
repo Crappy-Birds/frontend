@@ -24,9 +24,8 @@ const Home: NextPage = () => {
         <Mint />
         <Roadmap />
         <Team />
-        <Footer />
       </main>
-      {/* <footer></footer> */}
+      <Footer />
     </div>
   )
 }
