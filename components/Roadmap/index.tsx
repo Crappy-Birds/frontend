@@ -4,9 +4,9 @@ import { CgInfinity } from 'react-icons/cg'
 const timeline = [
   {
     id: 1,
-    title: '???',
-    content: '???',
-    date: '???',
+    title: 'Giveaways',
+    content: 'Crappy Birds airdrop to lucky birds',
+    date: 'Q4 2021',
     datetime: '2020-09-20',
     percentage: '25%',
     iconBackground: 'bg-dark-400',
@@ -22,8 +22,8 @@ const timeline = [
   },
   {
     id: 3,
-    title: 'Merch Release',
-    content: 'All birds get free merch',
+    title: 'Swag',
+    content: 'Crappy Birds merch store and giveaway',
     date: 'Q4 2021',
     datetime: '2020-09-28',
     percentage: '75%',
@@ -32,6 +32,7 @@ const timeline = [
   {
     id: 4,
     title: 'Fun-first blockchain MMO',
+    //birds gives game access and serves as your avatar
     content:
       'Think of Flappy Bird + Super Mario + Hollow Knight + Online Social features. Where your Crappy Bird gives you access to the game and serves as your avatar',
     date: 'PLANNED',
@@ -67,7 +68,7 @@ const Roadmap = ({}) => {
           roadmap
         </p> */}
         <div className="flex flex-wrap items-center justify-center w-full mt-12">
-          <div className="flow-root w-full px-0 sm:px-4 sm:w-1/2">
+          <div className="flow-root w-full px-0 sm:px-4 lg:w-1/2">
             <ul role="list" className="-mb-8">
               {timeline.map((event, eventIdx) => (
                 <li key={event.id}>
@@ -114,7 +115,7 @@ const Roadmap = ({}) => {
               ))}
             </ul>
           </div>
-          <div className="w-full sm:w-1/2">
+          <div className="w-full lg:w-1/2">
             <Image
               className="relative mx-auto"
               src="/images/drunk-crappy-bird-02.png"

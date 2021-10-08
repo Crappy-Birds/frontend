@@ -28,7 +28,7 @@ class MyDocument extends Document {
 
           {/* <!-- Open Graph / Facebook --> */}
           <meta property="og:type" content="website" />
-          <meta property="og:url" content="https://www.crappybirds.io/" />
+          <meta property="og:url" content="https://crappybirds.io/" />
           <meta property="og:title" content="Crappy Birds" />
           <meta
             property="og:description"
@@ -36,7 +36,7 @@ class MyDocument extends Document {
           />
           <meta
             property="og:image"
-            content="https://www.crappybirds.io/images/crappy-birds-in-the-nest.png"
+            content="https://crappybirds.io/images/crappy-birds-in-the-nest.png"
           />
 
           {/* <!-- Twitter --> */}
@@ -49,7 +49,7 @@ class MyDocument extends Document {
           />
           <meta
             property="twitter:image"
-            content="https://www.crappybirds.io/images/crappy-birds-in-the-nest.png"
+            content="https://crappybirds.io/images/crappy-birds-in-the-nest.png"
           />
 
           <link

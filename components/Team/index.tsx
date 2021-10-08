@@ -2,13 +2,15 @@ import Image from 'next/image'
 const people = [
   {
     name: 'fafifox',
-    role: 'Role',
+    role: 'CEO & Co-Founder',
+    bio: 'also made some crappy pixel art',
     imageUrl: '/images/team_fafifox.png',
     twitterUrl: 'https://twitter.com/fafif0x',
   },
   {
     name: 'yam',
     role: 'Role',
+    bio: ':glad:',
     imageUrl: '/images/team_yam.png',
     twitterUrl: 'https://twitter.com/',
   },
@@ -41,6 +43,9 @@ const Team = ({}) => {
                   <div className="space-y-1 text-lg font-medium leading-6">
                     <h3>{person.name}</h3>
                     <p className="text-pink-600">{person.role}</p>
+                    <div className="text-lg">
+                      <p className="text-gray-500">{person.bio}</p>
+                    </div>
                   </div>
                   <ul role="list" className="flex space-x-5">
                     <li>
