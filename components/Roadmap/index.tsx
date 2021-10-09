@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import DrunkBird from '../../public/images/drunk-crappy-bird-02.png'
 import { CgInfinity } from 'react-icons/cg'
 
 const timeline = [
@@ -80,23 +81,21 @@ const Roadmap = ({}) => {
                       />
                     ) : null}
                     <div className="relative flex items-center space-x-4">
-                      <div>
-                        <span
-                          className={classNames(
-                            event.iconBackground,
-                            'h-24 w-24 rounded-full flex items-center justify-center ring-8 ring-transparent flex-col'
-                          )}
-                        >
-                          {event.icon && (
-                            <event.icon
-                              className="w-10 h-10 text-white"
-                              aria-hidden="true"
-                            />
-                          )}
-                          <p className="text-lg italic font-semibold">
-                            {event.percentage}
-                          </p>
-                        </span>
+                      <div
+                        className={classNames(
+                          event.iconBackground,
+                          'h-24 w-24 rounded-full flex items-center justify-center ring-8 ring-transparent flex-col'
+                        )}
+                      >
+                        {event.icon && (
+                          <event.icon
+                            className="w-10 h-10 text-white"
+                            aria-hidden="true"
+                          />
+                        )}
+                        <p className="text-lg italic font-semibold">
+                          {event.percentage}
+                        </p>
                       </div>
                       <div className="flex items-center justify-between flex-1 min-w-0 space-x-4">
                         <div>
@@ -118,9 +117,7 @@ const Roadmap = ({}) => {
           <div className="w-full lg:w-1/2">
             <Image
               className="relative mx-auto"
-              src="/images/drunk-crappy-bird-02.png"
-              width={566}
-              height={512}
+              src={DrunkBird}
               alt="A drunk Crappy Bird is presenting the roadmap"
             />
           </div>

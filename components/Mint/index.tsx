@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import DrunkBird from '../../public/images/drunk-crappy-bird-01.png'
+import RandomThumbnail from '../../public/images/random-crappy-birds.png'
 
 const Mint = () => {
   return (
@@ -14,10 +16,8 @@ const Mint = () => {
             </p>
             <Image
               className="relative mx-auto"
-              src="/images/drunk-crappy-bird-01.png"
-              width={512}
-              height={512}
-              alt=""
+              src={DrunkBird}
+              alt="Drunk Crappy Bird showing the mint form"
             />
           </div>
 
@@ -31,10 +31,8 @@ const Mint = () => {
                 <div className="hidden md:inline">
                   <Image
                     className="relative mx-auto"
-                    src="/images/random-crappy-birds.png"
-                    width={72}
-                    height={72}
-                    alt="A drunk Crappy Bird is showing the mint panel"
+                    src={RandomThumbnail}
+                    alt=""
                   />
                 </div>
                 <div className="md:content-end md:text-right">
@@ -52,13 +50,12 @@ const Mint = () => {
                     >
                       Mint amount
                     </label>
-                    <span className="text-sm text-gray-400" id="email-optional">
+                    <span className="text-sm text-gray-400">
                       Limited to 3 per user
                     </span>
                   </div>
                   <input
                     type="number"
-                    inputMode="numeric"
                     min={1}
                     max={3}
                     step={1}
@@ -83,7 +80,7 @@ const Mint = () => {
                 </button>
               </div>
             </div>
-            <span className="text-sm text-gray-500" id="email-optional">
+            <span className="text-sm text-gray-500">
               Note: Ninety birds are being withheld from the sale. These will be
               used for giveaways, events — and for the team
             </span>

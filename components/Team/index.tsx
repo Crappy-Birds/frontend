@@ -1,17 +1,20 @@
 import Image from 'next/image'
+import Fafifox from '../../public/images/team_fafifox.png'
+import Yam from '../../public/images/team_yam.png'
+
 const people = [
   {
     name: 'fafifox',
     role: 'CEO & Co-Founder',
     bio: 'also made some crappy pixel art',
-    imageUrl: '/images/team_fafifox.png',
+    imageUrl: Fafifox,
     twitterUrl: 'https://twitter.com/fafif0x',
   },
   {
     name: 'yam',
     role: 'Role',
     bio: ':glad:',
-    imageUrl: '/images/team_yam.png',
+    imageUrl: Yam,
     twitterUrl: 'https://twitter.com/',
   },
 ]
@@ -23,10 +26,7 @@ const Team = ({}) => {
         <h2 className="px-4 text-3xl italic font-extrabold leading-8 tracking-tight uppercase sm:px-0 md:text-center text-gray-50 sm:text-5xl">
           Team
         </h2>
-        <ul
-          role="list"
-          className="max-w-2xl px-4 mx-auto mt-12 space-y-12 sm:px-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-2 lg:gap-x-8"
-        >
+        <ul className="max-w-2xl px-4 mx-auto mt-12 space-y-12 sm:px-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-2 lg:gap-x-8">
           {people.map((person) => (
             <li key={person.name}>
               <div className="space-y-4">
@@ -35,7 +35,7 @@ const Team = ({}) => {
                     className="object-cover rounded-lg shadow-lg"
                     src={person.imageUrl}
                     layout="fill"
-                    alt=""
+                    alt="Team Member Picture"
                   />
                 </div>
 
@@ -47,7 +47,7 @@ const Team = ({}) => {
                       <p className="text-gray-500">{person.bio}</p>
                     </div>
                   </div>
-                  <ul role="list" className="flex space-x-5">
+                  <ul className="flex space-x-5">
                     <li>
                       <a
                         href={person.twitterUrl}

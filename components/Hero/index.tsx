@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import HeroImage from '../../public/images/crappy-birds-in-the-nest.png'
 
 const Hero = () => {
   return (
@@ -7,7 +8,7 @@ const Hero = () => {
         <div className="relative w-full h-full shadow-xl sm:overflow-hidden sm:rounded-2xl">
           <Image
             className="object-fill w-auto h-full objec md:object-cover"
-            src="/images/crappy-birds-in-the-nest.png"
+            src={HeroImage}
             alt="Crappy Birds having fun in The Nest"
             width={1440}
             height={720}

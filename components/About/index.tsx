@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { FaDiscord, FaTwitter } from 'react-icons/fa'
+import BirdsGif from '../../public/images/crappybirds.gif'
 
 const socialFeatures = [
   {
@@ -91,7 +92,7 @@ const About = () => {
           >
             <Image
               className="relative mx-auto"
-              src="/images/crappybirds.gif"
+              src={BirdsGif}
               width={512}
               height={512}
               alt="Preview"
