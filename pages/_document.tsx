@@ -16,9 +16,8 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html lang="en">
         <Head>
-          <html lang="en" />
           <link rel="icon" href="/favicon.ico" />
           <meta charSet="UTF-8" />
           <meta name="title" content="Crappy Birds" />
