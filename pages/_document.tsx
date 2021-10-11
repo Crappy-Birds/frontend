@@ -19,7 +19,6 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <link rel="icon" href="/favicon.ico" />
-          <meta charSet="UTF-8" />
           <meta name="title" content="Crappy Birds" />
           <meta
             name="description"
