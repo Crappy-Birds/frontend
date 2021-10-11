@@ -6,7 +6,7 @@ const timeline = [
   {
     id: 1,
     title: 'Giveaways',
-    content: 'Crappy Birds airdrop to lucky birds',
+    content: 'Birds get airdropped to lucky holders',
     date: 'Q4 2021',
     datetime: '2020-09-20',
     percentage: '25%',
@@ -23,8 +23,9 @@ const timeline = [
   },
   {
     id: 3,
-    title: 'Swag',
-    content: 'Crappy Birds merch store and giveaway',
+    title: 'Exclusive Merch Store',
+    content:
+      'Crappy Birds Merch Store gets unlocked, featuring Limited Edition tees, hoodies, and other goodies.',
     date: 'Q4 2021',
     datetime: '2020-09-28',
     percentage: '75%',
@@ -32,10 +33,12 @@ const timeline = [
   },
   {
     id: 4,
-    title: 'Fun-first blockchain MMO',
+    //title: 'Fun-first blockchain MMO',
     //birds gives game access and serves as your avatar
+    //'Think of Flappy Bird + Super Mario + Hollow Knight + Online Social features. Where your Crappy Bird gives you access to the game and serves as your avatar',
+    title: 'Fun & Social MMO Game',
     content:
-      'Think of Flappy Bird + Super Mario + Hollow Knight + Online Social features. Where your Crappy Bird gives you access to the game and serves as your avatar',
+      'Where your Crappy Bird gives you access to the game and serves as your avatar',
     date: 'PLANNED',
     datetime: '2020-09-28',
     percentage: '100%',
@@ -45,7 +48,9 @@ const timeline = [
     id: 5,
     title: 'The Future',
     content:
-      'Something missing? Got a great idea? We want you to help us make it happen.',
+      //We keep the game up and roll new updates, and more to come
+      //'Something missing? Got a great idea? We want you to help us make it happen.',
+      'We keep the game up and running with new updates. And more to come ...',
     date: '& BEYOND',
     datetime: '2020-09-28',
     icon: CgInfinity,
@@ -105,7 +110,7 @@ const Roadmap = ({}) => {
                           </p>
                         </div>
                         <div className="hidden text-sm text-right text-gray-100 whitespace-nowrap sm:block">
-                          <time dateTime={event.datetime}>{event.date}</time>
+                          <p>{event.date}</p>
                         </div>
                       </div>
                     </div>
