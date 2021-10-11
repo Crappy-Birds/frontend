@@ -70,12 +70,9 @@ const Roadmap = ({}) => {
         <h2 className="px-4 text-3xl italic font-extrabold leading-8 tracking-tight uppercase sm:px-0 md:text-center text-gray-50 sm:text-5xl">
           Roadmap
         </h2>
-        {/* <p className="max-w-3xl mx-auto mt-4 text-lg text-gray-300 md:text-center md:text-lg">
-          roadmap
-        </p> */}
         <div className="flex flex-wrap items-center justify-center w-full mt-12">
           <div className="flow-root w-full px-0 sm:px-4 lg:w-1/2">
-            <ul role="list" className="-mb-8">
+            <ul className="-mb-8">
               {timeline.map((event, eventIdx) => (
                 <li key={event.id}>
                   <div className="relative pb-8">
@@ -104,7 +101,7 @@ const Roadmap = ({}) => {
                       </div>
                       <div className="flex items-center justify-between flex-1 min-w-0 space-x-4">
                         <div>
-                          <h6>{event.title}</h6>
+                          <h3>{event.title}</h3>
                           <p className="text-base text-gray-300">
                             {event.content}
                           </p>

@@ -44,12 +44,12 @@ const Team = ({}) => {
                 <div className="space-y-2">
                   <div className="space-y-1 text-lg font-medium leading-6">
                     <h3>{person.name}</h3>
-                    <p className="text-pink-600">{person.role}</p>
+                    <p className="text-brand-500">{person.role}</p>
                     <div className="text-lg">
                       <p className="text-gray-500">{person.bio}</p>
                     </div>
                   </div>
-                  <ul role="list" className="flex space-x-5">
+                  <ul className="flex space-x-5">
                     <li>
                       <a
                         href={person.twitterUrl}
