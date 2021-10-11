@@ -101,7 +101,9 @@ const Roadmap = ({}) => {
                       </div>
                       <div className="flex items-center justify-between flex-1 min-w-0 space-x-4">
                         <div>
-                          <h3>{event.title}</h3>
+                          <h3 className="text-lg font-semibold md:text-xl">
+                            {event.title}
+                          </h3>
                           <p className="text-base text-gray-300">
                             {event.content}
                           </p>
