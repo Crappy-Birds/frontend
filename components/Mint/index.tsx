@@ -1,8 +1,15 @@
 import Image from 'next/image'
+import { useState } from 'react'
 import DrunkBird from '../../public/images/drunk-crappy-bird-01.png'
 import RandomThumbnail from '../../public/images/random-crappy-birds.png'
 
 const Mint = () => {
+  const mintPrice = 700 // 0.07
+  const [birdAmount, setBirdAmount] = useState<number>()
+
+  const handleBirdAmountChange = (event: React.ChangeEvent<HTMLInputElement>) =>
+    setBirdAmount(Number(event.target.value))
+
   return (
     <div className="py-16 overflow-hidden bg-dark-500 lg:py-24" id="mint">
       <div className="max-w-xl px-4 mx-auto sm:px-6 lg:px-8 lg:max-w-7xl">
@@ -27,7 +34,7 @@ const Mint = () => {
                 Get a Crappy Bird
               </h4>
               <p>Enter the amount of birds you would like to purchase.</p>
-              <div className="bg-[#191920] py-8 px-4 rounded-lg flex flex-row justify-between">
+              <div className="bg-[#191920] py-8 px-4 rounded-lg flex flex-row justify-between items-center">
                 <div className="hidden md:inline">
                   <Image
                     className="relative mx-auto"
@@ -37,8 +44,11 @@ const Mint = () => {
                 </div>
                 <div className="md:content-end md:text-right">
                   <p className="text-lg font-medium">Price per Crappy Bird</p>
-                  <p className="text-xl font-bold">0.07 ETH Each</p>
-                  <p className="text-base">9,000 remaining</p>
+                  <p className="text-2xl italic font-bold">
+                    <span className="text-brand-500">{mintPrice / 10000}</span>{' '}
+                    ETH Each
+                  </p>
+                  <p className="text-lg">9,000 remaining</p>
                 </div>
               </div>
               <div className="space-y-4">
@@ -61,6 +71,8 @@ const Mint = () => {
                     step={1}
                     name="mint-amount"
                     id="mint-amount"
+                    value={birdAmount}
+                    onChange={(e) => handleBirdAmountChange(e)}
                     className="block w-full h-12 border-gray-600 rounded-md shadow-sm peer out-of-range:border-red-500 bg-dark-500 focus:ring-pink-500 focus:border-pink-500 sm:text-sm"
                     placeholder="0"
                   />
@@ -71,6 +83,16 @@ const Mint = () => {
                     Number not in range
                   </p>
                 </div>
+                {birdAmount && (
+                  <div className="flex justify-between transition-all duration-700">
+                    <p className="text-lg font-bold uppercase sm:text-2xl">
+                      Total :
+                    </p>
+                    <p className="text-lg font-bold uppercase sm:text-2xl">
+                      {(birdAmount * mintPrice) / 10000 || 0} ETH
+                    </p>
+                  </div>
+                )}
                 <button
                   type="submit"
                   className="flex justify-center w-full px-4 py-2 text-base italic font-bold text-white uppercase border border-transparent rounded-md shadow-sm disabled:cursor-not-allowed disabled:opacity-50 bg-brand-500 hover:bg-pink-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500"
