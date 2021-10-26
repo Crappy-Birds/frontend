@@ -18,12 +18,35 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <link rel="icon" href="/favicon.ico" />
           <meta name="title" content="Crappy Birds" />
           <meta
             name="description"
             content="9,000 Crappy Birds hanging out in The Nest."
           />
+          {/* favicons */}
+          <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/apple-touch-icon.png"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicon-32x32.png"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicon-16x16.png"
+          />
+          <link rel="manifest" href="/site.webmanifest" />
+          <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#df82f2" />
+          <meta name="apple-mobile-web-app-title" content="Crappy Birds" />
+          <meta name="application-name" content="Crappy Birds" />
+          <meta name="msapplication-TileColor" content="#603cba" />
+          <meta name="theme-color" content="#ffffff" />
 
           {/* <!-- Open Graph / Facebook --> */}
           <meta property="og:type" content="website" />
