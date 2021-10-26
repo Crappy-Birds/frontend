@@ -18,18 +18,16 @@ const Header: React.FC = () => {
       <Popover className="relative">
         <div className="flex items-center justify-between px-4 py-6 mx-auto max-w-7xl sm:px-6 md:space-x-10 lg:px-8 h-[75px]">
           <div className="flex justify-start lg:w-0 lg:flex-1">
-            <a href="#">
-              <span className="sr-only">Crappy Birds</span>
-              <div className="absolute top-0 z-10 w-1/2 h-auto max-w-md transition-transform duration-500 xl:-translate-x-12 md:w-1/4 xl:w-full translate-y-1/3 md:translate-y-2/4 xl:translate-y-1/4 -rotate-2 hover:rotate-2">
-                <Image
-                  className=""
-                  src={logo}
-                  alt="Crappy Birds Logo"
-                  width={498}
-                  height={115}
-                />
-              </div>
-            </a>
+            <span className="sr-only">Crappy Birds</span>
+            <div className="absolute top-0 z-10 w-1/2 h-auto max-w-md transition-transform duration-500 xl:-translate-x-12 md:w-1/4 xl:w-full translate-y-1/3 md:translate-y-2/4 xl:translate-y-1/4 -rotate-2 hover:rotate-2">
+              <Image
+                className=""
+                src={logo}
+                alt="Crappy Birds Logo"
+                width={498}
+                height={115}
+              />
+            </div>
           </div>
           <div className="-my-2 -mr-2 md:hidden">
             <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 rounded-md hover:text-gray-500 hover:bg-black focus:outline-none focus:ring-2 focus:ring-inset focus:ring-pink-600">
