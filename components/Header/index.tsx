@@ -7,6 +7,7 @@ const navigation = [
   { name: 'About', href: '#about' },
   { name: 'Buy a Bird', href: '#mint' },
   { name: 'Roadmap', href: '#roadmap' },
+  { name: 'FAQ', href: '#faq' },
   { name: 'Team', href: '#team' },
 ]
 
