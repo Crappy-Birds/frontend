@@ -54,6 +54,8 @@ const Team = ({}) => {
                       <a
                         href={person.twitterUrl}
                         className="text-gray-400 hover:text-gray-500"
+                        target="_blank"
+                        rel="noreferrer"
                       >
                         <span className="sr-only">Twitter</span>
                         <svg
@@ -70,6 +72,8 @@ const Team = ({}) => {
                       <a
                         href={person.linkedinUrl}
                         className="text-gray-400 hover:text-gray-500"
+                        target="_blank"
+                        rel="noreferrer"
                       >
                         <span className="sr-only">LinkedIn</span>
                         <svg
