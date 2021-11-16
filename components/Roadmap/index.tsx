@@ -3,56 +3,70 @@ import DrunkBird from '../../public/images/drunk-crappy-bird-02.png'
 import { CgInfinity } from 'react-icons/cg'
 
 const timeline = [
+  /* {
+    id: 0,
+    title: 'Founder Sale',
+    content: 'Seed Sale begins',
+    date: 'Q4 2021',
+    percentage: '0%',
+    iconBackground: 'bg-dark-400',
+  }, */
   {
     id: 1,
-    title: 'Giveaways',
-    content: 'Birds get airdropped to lucky holders',
+    title: 'Get the ball rolling',
+    content: 'Game development begins',
     date: 'Q4 2021',
-    datetime: '2020-09-20',
-    percentage: '25%',
+    percentage: '10%',
     iconBackground: 'bg-dark-400',
   },
   {
     id: 2,
-    title: '???',
-    content: '???',
-    date: '???',
-    datetime: '2020-09-22',
-    percentage: '50%',
+    title: 'Giveaways',
+    content: 'Birds get airdropped to lucky holders',
+    date: 'Q4 2021',
+    percentage: '25%',
     iconBackground: 'bg-dark-400',
   },
   {
     id: 3,
-    title: 'Exclusive Merch Store',
-    content:
-      'Crappy Birds Merch Store gets unlocked, featuring Limited Edition tees, hoodies, and other goodies.',
-    date: 'Q4 2021',
-    datetime: '2020-09-28',
-    percentage: '75%',
+    title: '???',
+    content: '???',
+    date: '???',
+    percentage: '50%',
     iconBackground: 'bg-dark-400',
   },
   {
     id: 4,
-    //title: 'Fun-first blockchain MMO',
-    //birds gives game access and serves as your avatar
-    //'Think of Flappy Bird + Super Mario + Hollow Knight + Online Social features. Where your Crappy Bird gives you access to the game and serves as your avatar',
-    title: 'Fun & Social MMO Game',
-    content:
-      'Where your Crappy Bird gives you access to the game and serves as your avatar',
-    date: 'PLANNED',
-    datetime: '2020-09-28',
-    percentage: '100%',
+    title: 'Exclusive Merch Store',
+    content: 'Featuring Limited Edition tees, hoodies, and other goodies.',
+    date: 'Q4 2021',
+    percentage: '75%',
     iconBackground: 'bg-dark-400',
   },
   {
     id: 5,
-    title: 'The Future',
+    //title: 'Fun-first blockchain MMO',
+    //birds gives game access and serves as your avatar
+    //'Think of Flappy Bird + Super Mario + Hollow Knight + Online Social features. Where your Crappy Bird gives you access to the game and serves as your avatar',
+    //Fun & Social first Online Game with play-and-earn mechanics.
+    title: 'Fun & Social MMO Game',
+    content:
+      'Where your Crappy Bird gives you access to the game and serves as your avatar',
+    date: 'PLANNED',
+    percentage: '100%',
+    iconBackground: 'bg-dark-400',
+  },
+  {
+    id: 6,
+    //title: 'The Future',
+    title: 'Keep the ball rolling',
     content:
       //We keep the game up and roll new updates, and more to come
       //'Something missing? Got a great idea? We want you to help us make it happen.',
-      'We keep the game up and running with new updates. And more to come ...',
+      //Keep the ball rolling - Game maintenace and updates, DAO, Events ...
+      //'We keep the game up and running with new updates. And more to come ...',
+      'Game maintenace, Game updates, DAO, Events ...',
     date: '& BEYOND',
-    datetime: '2020-09-28',
     icon: CgInfinity,
     percentage: '',
     iconBackground: 'bg-dark-400',
@@ -73,10 +87,10 @@ const Roadmap = ({}) => {
         <div className="flex flex-wrap items-center justify-center w-full mt-12">
           <div className="flow-root w-full px-0 sm:px-4 lg:w-1/2">
             <ul className="-mb-8">
-              {timeline.map((event, eventIdx) => (
-                <li key={event.id}>
+              {timeline.map((milestone, milestoneId) => (
+                <li key={milestone.id}>
                   <div className="relative pb-8">
-                    {eventIdx !== timeline.length - 1 ? (
+                    {milestoneId !== timeline.length - 1 ? (
                       <span
                         className="absolute w-1 h-full -ml-px bg-gray-200 top-12 left-12"
                         aria-hidden="true"
@@ -85,37 +99,40 @@ const Roadmap = ({}) => {
                     <div className="relative flex items-center space-x-4">
                       <div
                         className={classNames(
-                          event.iconBackground,
+                          milestone.iconBackground,
                           'h-24 w-24 rounded-full flex items-center justify-center ring-8 ring-transparent flex-col'
                         )}
                       >
-                        {event.icon && (
-                          <event.icon
+                        {milestone.icon && (
+                          <milestone.icon
                             className="w-10 h-10 text-white"
                             aria-hidden="true"
                           />
                         )}
                         <p className="text-lg italic font-semibold">
-                          {event.percentage}
+                          {milestone.percentage}
                         </p>
                       </div>
                       <div className="flex items-center justify-between flex-1 min-w-0 space-x-4">
                         <div>
                           <h3 className="text-lg font-semibold md:text-xl">
-                            {event.title}
+                            {milestone.title}
                           </h3>
                           <p className="text-base text-gray-300">
-                            {event.content}
+                            {milestone.content}
                           </p>
                         </div>
                         <div className="hidden text-sm text-right text-gray-100 whitespace-nowrap sm:block">
-                          <p>{event.date}</p>
+                          <p>{milestone.date}</p>
                         </div>
                       </div>
                     </div>
                   </div>
                 </li>
               ))}
+              <span className="text-sm text-gray-400">
+                Note: A fully fledged roadmap will be released after the sale.
+              </span>
             </ul>
           </div>
           <div className="w-full lg:w-1/2">
