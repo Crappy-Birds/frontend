@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { FaDiscord, FaTwitter } from 'react-icons/fa'
+import { HiCheck } from 'react-icons/hi'
 import BirdsGif from '../../public/images/crappybirds.gif'
 
 const socialFeatures = [
@@ -21,13 +22,49 @@ const socialFeatures = [
   },
 ]
 
+const benefits = [
+  {
+    name: 'Exclusive Membership',
+    description:
+      'Cool benefits. Lorem ipsum dolor sit amet. Duis diam turpis pellentesque.',
+  },
+  {
+    name: 'Game Early-Access',
+    description:
+      'Cool benefits. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+  },
+  {
+    name: 'Whitelist',
+    description:
+      'Cool benefits. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis diam turpis pellentesque.',
+  },
+  {
+    name: 'Ownership',
+    description:
+      'Cool benefits. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+  },
+  {
+    name: 'Profile Picture',
+    description:
+      'Cool benefits. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+  },
+  {
+    name: 'Long-term',
+    description:
+      'Cool benefits. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis diam turpis pellentesque.',
+  },
+]
+
 const About = () => {
   return (
     <div className="py-16 overflow-hidden bg-dark-400 lg:py-24" id="about">
       <div className="max-w-xl px-4 mx-auto sm:px-6 lg:px-8 lg:max-w-7xl">
-        <h2 className="text-3xl italic font-extrabold leading-8 tracking-tight uppercase md:text-center text-gray-50 sm:text-5xl">
+        <h1 className="text-3xl italic font-extrabold leading-8 tracking-tight uppercase md:text-center text-gray-50 sm:text-5xl">
+          About those Crappy Birds
+        </h1>
+        {/* <h2 className="text-3xl italic font-extrabold leading-8 tracking-tight uppercase md:text-center text-gray-50 sm:text-5xl">
           Welcome to The Nest
-        </h2>
+        </h2>*/}
         <p className="max-w-3xl mx-auto mt-4 text-lg text-gray-300 md:text-center">
           In a world where humans are no more. Some weird birds have survived,
           and for better or worse, they have discovered and adopted human
@@ -41,27 +78,28 @@ const About = () => {
 
         <div className="mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
           <div>
-            <h3 className="text-2xl italic font-extrabold tracking-tight lowercase text-gray-50 sm:text-3xl">
-              What are those ?
-            </h3>
+            <h2 className="text-2xl italic font-extrabold tracking-tight uppercase text-gray-50 sm:text-3xl">
+              Genesis NFT Drop
+            </h2>
             <p className="mt-3 text-lg text-gray-300">
-              Crappy Birds is an NFT collection made of 9,000 unique birds,
+              Crappy Birds : Genesis is an NFT collection made of 9,000 unique
+              birds, randomly generated from over 170 attributes across 10
+              categories.
               <br />
-              randomly generated from over 160 attributes across 10 categories.
               <br />
+              Our goal is to build a strong brand and develop a multiplayer
+              online game including play-and-earn mechanics, funds from the sale
+              will be used to bootstrap and develop the Crappy Birds ecosystem.
+              {/* <br />
               <br />
-              Each Crappy Bird grants an exclusive access to The Nest and
-              futures areas and perks that can be unlocked by the community
-              through the roadmap.
-              <br />
-              They are stored as ERC-721 tokens on the Ethereum blockchain
+              They are stored as ERC-721 tokens on the Ethereum blockchain */}
             </p>
 
             <dl className="mt-10 space-y-10">
               {socialFeatures.map((item) => (
                 <div
                   key={item.id}
-                  className="relative transition-all duration-500 ease-out group hover:translate-x-4"
+                  className="relative transition-transform duration-500 ease-out group hover:translate-x-4"
                 >
                   <dt>
                     <div
@@ -95,53 +133,44 @@ const About = () => {
               src={BirdsGif}
               width={512}
               height={512}
-              alt="Preview"
+              alt="Crappy Birds NFT Preview"
             />
           </div>
         </div>
 
-        {/* <div className="relative mt-12 sm:mt-16 lg:mt-24">
-          <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
-            <div className="lg:col-start-2">
-              <h3 className="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
-                Always in the loop
-              </h3>
-              <p className="mt-3 text-lg text-gray-500">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-                ex obcaecati natus eligendi delectus, cum deleniti sunt in
-                labore nihil quod quibusdam expedita nemo.
-              </p>
-
-              <dl className="mt-10 space-y-10">
-                {socialFeatures.map((item) => (
-                  <div key={item.id} className="relative">
-                    <dt>
-                      <div className="absolute flex items-center justify-center w-12 h-12 text-white bg-indigo-500 rounded-md">
-                        <item.icon className="w-6 h-6" aria-hidden="true" />
-                      </div>
-                      <p className="ml-16 text-lg font-medium leading-6 text-gray-900">
-                        {item.name}
-                      </p>
-                    </dt>
-                    <dd className="mt-2 ml-16 text-base text-gray-500">
-                      {item.description}
-                    </dd>
-                  </div>
-                ))}
-              </dl>
-            </div>
-
-            <div className="relative mt-10 -mx-4 lg:mt-0 lg:col-start-1">
-              <Image
-                className="relative mx-auto"
-                width={980}
-                height={748}
-                src="/images/feature-example-2.png"
-                alt=""
-              />
-            </div>
+        <div className="px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:py-24 lg:px-8">
+          <div className="max-w-3xl mx-auto text-center">
+            <h3 className="text-base font-semibold tracking-wide uppercase text-brand-500">
+              Genesis&apos; holders benefits
+            </h3>
+            <h2 className="text-2xl italic font-extrabold tracking-tight uppercase text-gray-50 sm:text-3xl">
+              Welcome to The Nest
+            </h2>
+            <p className="mt-4 text-lg text-gray-300">
+              Each Crappy Bird grants an exclusive access to The Nest and
+              futures perks that can be unlocked by the community through the
+              roadmap.
+            </p>
           </div>
-        </div> */}
+          <dl className="mt-12 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-3 lg:gap-x-8">
+            {benefits.map((benefit) => (
+              <div key={benefit.name} className="relative">
+                <dt>
+                  <HiCheck
+                    className="absolute w-6 h-6 text-green-500"
+                    aria-hidden="true"
+                  />
+                  <p className="text-lg font-medium leading-6 text-gray-100 ml-9">
+                    {benefit.name}
+                  </p>
+                </dt>
+                <dd className="mt-2 text-base text-gray-400 ml-9">
+                  {benefit.description}
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </div>
       </div>
     </div>
   )
