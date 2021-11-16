@@ -91,7 +91,7 @@ const About = () => {
             aria-hidden="true"
           >
             <Image
-              className="relative mx-auto"
+              className="relative object-cover mx-auto rounded-lg shadow-lg"
               src={BirdsGif}
               width={512}
               height={512}
