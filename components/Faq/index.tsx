@@ -3,29 +3,44 @@ import { HiChevronDown } from 'react-icons/hi'
 
 const faqs = [
   {
-    question: 'Is this a great question about Crappy Birds ?',
+    question: 'What is this NFT collection about ?',
     answer:
-      "I don't know. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "The Crappy Birds: Genesis collection is made of 9,000 randomly generated birds made to bootstrap the game development, the community and what's around it.",
   },
   {
-    question: 'Is this a great question about Crappy Birds ?',
+    question: 'What are the perks of having a Crappy Birds: Genesis NFT ?',
     answer:
-      "I don't know. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      'Private community membership, game early access, whitelisted for future sales and more through roadmap activations.',
   },
   {
-    question: 'Is this a great question about Crappy Birds ?',
+    question: 'Are there secondary sales royalties ?',
     answer:
-      "I don't know. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      'Yes, royalties are set at 5%. We strongly believe in community-driven development, and as part of our growth strategy, money earned from secondary sales will be used to grow the game.',
   },
   {
-    question: 'Is this a great question about Crappy Birds ?',
-    answer:
-      "I don't know. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+    question: 'What is the game genre of Crappy Birds ?',
+    answer: '2D side-scrolling platformer / Metroidvania / MMO',
   },
   {
-    question: 'Is this a great question about Crappy Birds ?',
+    question: 'What is your inspiration for the Crappy Birds game ?',
     answer:
-      "I don't know. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      'You can think of a mix between Flappy Bird, Super Mario, Hollow Knight and Maplestory.',
+  },
+  {
+    question: 'Will there be a play-and-earn aspect to the game ?',
+    answer:
+      'Yes. We want to create a fun game first, and then implement play-and-earn mechanics in a smooth way.',
+  },
+  {
+    question: 'Do you plan to launch ERC20 tokens for the game ?',
+    answer:
+      'Most likely yes, as a play-and-earn game would need one or more currencies in the game.',
+  },
+  {
+    question:
+      "If the NFT sale doesn't sell out, will the game still be developed?",
+    answer:
+      'Yes of course, but we may have to reduce the scope of the game to fit into the available budget.',
   },
 ]
 
