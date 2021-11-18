@@ -24,32 +24,35 @@ const socialFeatures = [
 
 const benefits = [
   {
-    name: 'Exclusive Membership',
+    //name: 'Private Community Membership',
+    name: 'Community Membership',
     description:
-      'Cool benefits. Lorem ipsum dolor sit amet. Duis diam turpis pellentesque.',
-  },
-  {
-    name: 'Game Early-Access',
-    description:
-      'Cool benefits. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      //'Access to private Discord channels, network with fellow Crappy Birds and get development insights from the team before anyone else.',
+      'Access to private Discord channels and get development insights from the team before anyone else.',
   },
   {
     name: 'Whitelist',
     description:
-      'Cool benefits. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis diam turpis pellentesque.',
+      'Holding a Genesis bird grant you a whitelist spot during future sales.',
   },
   {
-    name: 'Ownership',
+    name: 'Commercial Usage Rights',
     description:
-      'Cool benefits. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      'As long as you own the NFT, you have full commercial rights to it.',
   },
   {
-    name: 'Profile Picture',
+    name: 'A crappy profile picture',
     description:
-      'Cool benefits. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      //'You may want to show off your bad taste by using your Crappy Bird as your profile picture',
+      'Using your Crappy Bird as profile picture might be a good way to show off your bad taste.',
   },
   {
-    name: 'Long-term',
+    name: 'Early-Access',
+    description:
+      'Try out the game first by taking part in closed alpha and beta',
+  },
+  {
+    name: 'Exclusive In-Game rewards',
     description:
       'Cool benefits. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis diam turpis pellentesque.',
   },
@@ -147,9 +150,8 @@ const About = () => {
               Welcome to The Nest
             </h2>
             <p className="mt-4 text-lg text-gray-300">
-              Each Crappy Bird grants an exclusive access to The Nest and
-              futures perks that can be unlocked by the community through the
-              roadmap.
+              Holding a Crappy Bird grants an exclusive access to The Nest and
+              many perks that will be unlocked through the roadmap.
             </p>
           </div>
           <dl className="mt-12 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-3 lg:gap-x-8">

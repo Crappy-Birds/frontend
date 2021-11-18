@@ -51,7 +51,8 @@ const timeline = [
     //Fun & Social first Online Game with play-and-earn mechanics.
     title: 'Fun & Social MMO Game',
     content:
-      'Where your Crappy Bird gives you access to the game and serves as your avatar',
+      //'Where your Crappy Bird gives you access to the game and serves as your avatar',
+      'Fun & Social MMO with play-and-earn mechanics',
     date: 'PLANNED',
     percentage: '100%',
     iconBackground: 'bg-dark-400',
@@ -65,7 +66,7 @@ const timeline = [
       //'Something missing? Got a great idea? We want you to help us make it happen.',
       //Keep the ball rolling - Game maintenace and updates, DAO, Events ...
       //'We keep the game up and running with new updates. And more to come ...',
-      'Game maintenace, Game updates, DAO, Events ...',
+      'Game maintenace, Game updates, Events and more to come ...',
     date: '& BEYOND',
     icon: CgInfinity,
     percentage: '',
