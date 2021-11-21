@@ -9,7 +9,7 @@ const timeline = [
     content: 'Seed Sale begins',
     date: 'Q4 2021',
     percentage: '0%',
-    iconBackground: 'bg-dark-400',
+    iconBackground: 'bg-dark-400  border-4 border-white',
   }, */
   {
     id: 1,
@@ -17,15 +17,15 @@ const timeline = [
     content: 'Game development begins',
     date: 'Q4 2021',
     percentage: '10%',
-    iconBackground: 'bg-dark-400',
+    iconBackground: 'bg-brand-800',
   },
   {
     id: 2,
     title: 'Giveaways',
-    content: 'Birds get airdropped to lucky holders',
+    content: 'Birds get airdropped to the community',
     date: 'Q4 2021',
     percentage: '25%',
-    iconBackground: 'bg-dark-400',
+    iconBackground: 'bg-brand-800',
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ const timeline = [
     content: '???',
     date: '???',
     percentage: '50%',
-    iconBackground: 'bg-dark-400',
+    iconBackground: 'bg-brand-800',
   },
   {
     id: 4,
@@ -41,7 +41,7 @@ const timeline = [
     content: 'Featuring Limited Edition tees, hoodies, and other goodies.',
     date: 'Q4 2021',
     percentage: '75%',
-    iconBackground: 'bg-dark-400',
+    iconBackground: 'bg-brand-800',
   },
   {
     id: 5,
@@ -52,10 +52,10 @@ const timeline = [
     title: 'Fun & Social MMO Game',
     content:
       //'Where your Crappy Bird gives you access to the game and serves as your avatar',
-      'Fun & Social MMO with play-and-earn mechanics',
+      'Fun-first online game leveraging NFTs and play-and-earn mechanics.',
     date: 'PLANNED',
     percentage: '100%',
-    iconBackground: 'bg-dark-400',
+    iconBackground: 'bg-brand-800',
   },
   {
     id: 6,
@@ -70,7 +70,7 @@ const timeline = [
     date: '& BEYOND',
     icon: CgInfinity,
     percentage: '',
-    iconBackground: 'bg-dark-400',
+    iconBackground: 'bg-brand-800',
   },
 ]
 
@@ -80,7 +80,10 @@ function classNames(...classes: string[]) {
 
 const Roadmap = ({}) => {
   return (
-    <div className="py-16 overflow-hidden bg-dark-400 lg:py-24" id="roadmap">
+    <div
+      className="py-16 overflow-hidden lg:py-24 bg-gradient-to-b from-brand-800 to-dark-500"
+      id="roadmap"
+    >
       <div className="max-w-xl px-4 mx-auto sm:px-6 lg:px-8 lg:max-w-7xl">
         <h2 className="px-4 text-3xl italic font-extrabold leading-8 tracking-tight uppercase sm:px-0 md:text-center text-gray-50 sm:text-5xl">
           Roadmap
@@ -93,12 +96,13 @@ const Roadmap = ({}) => {
                   <div className="relative pb-8">
                     {milestoneId !== timeline.length - 1 ? (
                       <span
-                        className="absolute w-1 h-full -ml-px bg-gray-200 top-12 left-12"
+                        className="absolute w-1 h-full -ml-px bg-gray-400 top-12 left-12"
                         aria-hidden="true"
                       />
                     ) : null}
                     <div className="relative flex items-center space-x-4">
                       <div
+                        //className="flex flex-col items-center justify-center w-24 h-24 border-8 border-black border-opacity-25 rounded-full bg-dark-400 ring-8 ring-transparent"
                         className={classNames(
                           milestone.iconBackground,
                           'h-24 w-24 rounded-full flex items-center justify-center ring-8 ring-transparent flex-col'

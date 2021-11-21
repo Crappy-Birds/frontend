@@ -4,14 +4,17 @@ import DrunkBird from '../../public/images/drunk-crappy-bird-01.png'
 import RandomThumbnail from '../../public/images/random-crappy-birds.png'
 
 const Mint = () => {
-  const mintPrice = 700 // 0.07
+  const mintPrice = 400 // 0.04
   const [birdAmount, setBirdAmount] = useState<number>()
 
   const handleBirdAmountChange = (event: React.ChangeEvent<HTMLInputElement>) =>
     setBirdAmount(Number(event.target.value))
 
   return (
-    <div className="py-16 overflow-hidden bg-dark-500 lg:py-24" id="mint">
+    <div
+      className="py-16 overflow-hidden lg:py-24 bg-gradient-to-b from-brand-700 to-brand-800"
+      id="mint"
+    >
       <div className="max-w-xl px-4 mx-auto sm:px-6 lg:px-8 lg:max-w-7xl">
         <div className="flex flex-wrap items-center px-4 sm:px-0">
           <div className="w-full md:w-2/3 lg:w-1/2">
@@ -29,7 +32,7 @@ const Mint = () => {
           </div>
 
           <div className="w-full h-auto px-0 text-center lg:w-1/2 sm:px-8 md:-mx-4">
-            <div className="flex flex-col content-start w-full h-full p-4 space-y-4 text-left border border-gray-500 md:p-8 rounded-xl bg-dark-400">
+            <div className="flex flex-col content-start w-full h-full p-4 space-y-4 text-left border shadow-xl border-brand-500 md:p-8 rounded-xl bg-dark-400">
               <h4 className="text-2xl italic capitalize md:text-3xl">
                 Get a Crappy Bird
               </h4>
@@ -37,7 +40,7 @@ const Mint = () => {
               <div className="bg-[#191920] py-8 px-4 rounded-lg flex flex-row justify-between items-center">
                 <div className="hidden md:inline">
                   <Image
-                    className="relative mx-auto"
+                    className="relative mx-auto rounded-lg bg-brand-600"
                     src={RandomThumbnail}
                     alt=""
                   />
@@ -45,7 +48,7 @@ const Mint = () => {
                 <div className="md:content-end md:text-right">
                   <p className="text-lg font-medium">Price per Crappy Bird</p>
                   <p className="text-2xl italic font-bold">
-                    <span className="text-brand-500">{mintPrice / 10000}</span>{' '}
+                    <span className="text-brand-600">{mintPrice / 10000}</span>{' '}
                     ETH Each
                   </p>
                   <p className="text-lg">9,000 remaining</p>
@@ -73,7 +76,7 @@ const Mint = () => {
                     id="mint-amount"
                     value={birdAmount}
                     onChange={(e) => handleBirdAmountChange(e)}
-                    className="block w-full h-12 border-gray-600 rounded-md shadow-sm peer out-of-range:border-red-500 bg-dark-500 focus:ring-pink-500 focus:border-pink-500 sm:text-sm"
+                    className="block w-full h-12 border-gray-600 rounded-md shadow-sm peer out-of-range:border-red-500 bg-dark-500 focus:ring-brand-500 focus:border-brand-500 sm:text-sm"
                     placeholder="0"
                   />
                   <p
@@ -95,14 +98,14 @@ const Mint = () => {
                 )}
                 <button
                   type="submit"
-                  className="flex justify-center w-full px-4 py-2 text-base italic font-bold text-white uppercase border border-transparent rounded-md shadow-sm disabled:cursor-not-allowed disabled:opacity-50 bg-brand-500 hover:bg-pink-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500"
+                  className="flex justify-center w-full px-4 py-2 text-base italic font-bold text-white uppercase border border-transparent rounded-md shadow-sm disabled:cursor-not-allowed disabled:opacity-50 bg-brand-600 hover:bg-brand-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500"
                   disabled={true}
                 >
                   Connect Wallet
                 </button>
               </div>
             </div>
-            <span className="text-sm text-gray-500">
+            <span className="text-sm text-gray-400">
               Note: Ninety birds are being withheld from the sale. These will be
               used for giveaways, events — and for the team
             </span>

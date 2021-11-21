@@ -50,7 +50,10 @@ function classNames(...classes: string[]) {
 
 const Faq = ({}) => {
   return (
-    <div className="py-16 overflow-hidden bg-dark-500 lg:py-24" id="faq">
+    <div
+      className="py-16 overflow-hidden lg:py-24 bg-gradient-to-b from-dark-500 to-black"
+      id="faq"
+    >
       <div className="max-w-xl px-4 mx-auto sm:px-6 lg:px-8 lg:max-w-7xl">
         <h2 className="px-4 text-3xl italic font-extrabold leading-8 tracking-tight uppercase sm:px-0 md:text-center text-gray-50 sm:text-5xl">
           FAQ

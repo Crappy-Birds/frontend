@@ -8,6 +8,7 @@ import Roadmap from '@/components/Roadmap'
 import Team from '@/components/Team'
 import Footer from '@/components/Footer'
 import Faq from '@/components/Faq'
+import Benefits from '@/components/Benefits'
 
 const Home: NextPage = () => {
   return (
@@ -20,6 +21,7 @@ const Home: NextPage = () => {
       <main>
         <Hero />
         <About />
+        <Benefits />
         <Mint />
         <Roadmap />
         <Faq />

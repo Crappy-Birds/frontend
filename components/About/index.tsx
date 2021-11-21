@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import { FaDiscord, FaTwitter } from 'react-icons/fa'
-import { HiCheck } from 'react-icons/hi'
 import BirdsGif from '../../public/images/crappybirds.gif'
 
 const socialFeatures = [
@@ -22,53 +21,20 @@ const socialFeatures = [
   },
 ]
 
-const benefits = [
-  {
-    //name: 'Private Community Membership',
-    name: 'Community Membership',
-    description:
-      //'Access to private Discord channels, network with fellow Crappy Birds and get development insights from the team before anyone else.',
-      'Access to private Discord channels and get development insights from the team before anyone else.',
-  },
-  {
-    name: 'Whitelist',
-    description:
-      'Holding a Genesis bird grant you a whitelist spot during future sales.',
-  },
-  {
-    name: 'Commercial Usage Rights',
-    description:
-      'As long as you own the NFT, you have full commercial rights to it.',
-  },
-  {
-    name: 'A crappy profile picture',
-    description:
-      //'You may want to show off your bad taste by using your Crappy Bird as your profile picture',
-      'Using your Crappy Bird as profile picture might be a good way to show off your bad taste.',
-  },
-  {
-    name: 'Early-Access',
-    description:
-      'Try out the game first by taking part in closed alpha and beta',
-  },
-  {
-    name: 'Exclusive In-Game rewards',
-    description:
-      'Cool benefits. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis diam turpis pellentesque.',
-  },
-]
-
 const About = () => {
   return (
-    <div className="py-16 overflow-hidden bg-dark-400 lg:py-24" id="about">
+    <div
+      className="py-16 overflow-hidden lg:py-24 bg-gradient-to-b from-brand-600 via-[#1D3D5A] to-dark-400"
+      id="about"
+    >
       <div className="max-w-xl px-4 mx-auto sm:px-6 lg:px-8 lg:max-w-7xl">
-        <h1 className="text-3xl italic font-extrabold leading-8 tracking-tight uppercase md:text-center text-gray-50 sm:text-5xl">
+        <h1 className="text-3xl italic font-extrabold leading-8 tracking-tight uppercase text-gray-50 md:text-center sm:text-5xl">
           About those Crappy Birds
         </h1>
         {/* <h2 className="text-3xl italic font-extrabold leading-8 tracking-tight uppercase md:text-center text-gray-50 sm:text-5xl">
           Welcome to The Nest
         </h2>*/}
-        <p className="max-w-3xl mx-auto mt-4 text-lg text-gray-300 md:text-center">
+        <p className="max-w-3xl mx-auto mt-4 text-lg text-gray-200 md:text-center">
           In a world where humans are no more. Some weird birds have survived,
           and for better or worse, they have discovered and adopted human
           culture.
@@ -81,10 +47,10 @@ const About = () => {
 
         <div className="mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
           <div>
-            <h2 className="text-2xl italic font-extrabold tracking-tight uppercase text-gray-50 sm:text-3xl">
-              Genesis NFT Drop
+            <h2 className="text-2xl italic font-extrabold tracking-tight text-white uppercase sm:text-3xl">
+              Genesis Drop
             </h2>
-            <p className="mt-3 text-lg text-gray-300">
+            <p className="mt-3 text-lg text-gray-200">
               Crappy Birds : Genesis is an NFT collection made of 9,000 unique
               birds, randomly generated from over 170 attributes across 10
               categories.
@@ -139,39 +105,6 @@ const About = () => {
               alt="Crappy Birds NFT Preview"
             />
           </div>
-        </div>
-
-        <div className="px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:py-24 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center">
-            <h3 className="text-base font-semibold tracking-wide uppercase text-brand-500">
-              Genesis&apos; holders benefits
-            </h3>
-            <h2 className="text-2xl italic font-extrabold tracking-tight uppercase text-gray-50 sm:text-3xl">
-              Welcome to The Nest
-            </h2>
-            <p className="mt-4 text-lg text-gray-300">
-              Holding a Crappy Bird grants an exclusive access to The Nest and
-              many perks that will be unlocked through the roadmap.
-            </p>
-          </div>
-          <dl className="mt-12 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-3 lg:gap-x-8">
-            {benefits.map((benefit) => (
-              <div key={benefit.name} className="relative">
-                <dt>
-                  <HiCheck
-                    className="absolute w-6 h-6 text-green-500"
-                    aria-hidden="true"
-                  />
-                  <p className="text-lg font-medium leading-6 text-gray-100 ml-9">
-                    {benefit.name}
-                  </p>
-                </dt>
-                <dd className="mt-2 text-base text-gray-400 ml-9">
-                  {benefit.description}
-                </dd>
-              </div>
-            ))}
-          </dl>
         </div>
       </div>
     </div>
