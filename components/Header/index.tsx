@@ -16,11 +16,11 @@ const logo = '/images/logo.png'
 const Header: React.FC = () => {
   return (
     <header>
-      <Popover className="relative bg-gradient-to-b from-brand-500 to-brand-500">
+      <Popover className="relative bg-brand-400">
         <div className="flex items-center justify-between px-4 py-6 mx-auto max-w-7xl sm:px-6 md:space-x-10 lg:px-8 h-[75px]">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <span className="sr-only">Crappy Birds</span>
-            <div className="absolute top-0 z-10 w-1/2 h-auto max-w-md transition-transform duration-500 xl:-translate-x-12 md:w-1/4 xl:w-full translate-y-1/3 md:translate-y-2/4 xl:translate-y-1/4 -rotate-2 hover:rotate-2">
+            <div className="absolute top-0 z-10 w-1/2 h-auto max-w-md transition-transform duration-500 xl:-translate-x-7 2xl:-translate-x-12 md:w-1/4 xl:w-full translate-y-1/3 md:translate-y-2/4 xl:translate-y-1/4 -rotate-2 hover:rotate-2">
               <Image
                 src={logo}
                 alt="Crappy Birds Logo"
@@ -30,7 +30,7 @@ const Header: React.FC = () => {
             </div>
           </div>
           <div className="-my-2 -mr-2 md:hidden">
-            <Popover.Button className="inline-flex items-center justify-center p-2 text-white rounded-md hover:text-gray-500 hover:bg-black focus:outline-none focus:ring-2 focus:ring-inset focus:ring-brand-600">
+            <Popover.Button className="inline-flex items-center justify-center p-2 rounded-md text-dark-900 hover:text-gray-500 hover:bg-black focus:outline-none focus:ring-2 focus:ring-inset focus:ring-dark-500">
               <span className="sr-only">Open menu</span>
               <MenuIcon className="w-6 h-6" aria-hidden="true" />
             </Popover.Button>
@@ -43,7 +43,7 @@ const Header: React.FC = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="px-2 py-1 text-xs italic font-normal text-white uppercase transition duration-500 ease-in-out rounded-lg bg-opacity-30 bg-dark-500 hover:bg-opacity-100 hover:rotate-3"
+                className="text-xs font-bold uppercase transition duration-500 ease-in-out lg:text-sm text-dark-900 hover:rotate-6 hover:bg-brand-300"
               >
                 {item.name}
               </a>
@@ -64,7 +64,7 @@ const Header: React.FC = () => {
             focus
             className="absolute inset-x-0 top-0 z-30 p-2 transition origin-top-right transform md:hidden"
           >
-            <div className="divide-y-2 rounded-lg shadow-lg bg-dark-500 ring-1 ring-black ring-opacity-5 divide-dark-400">
+            <div className="divide-y-2 rounded-lg shadow-lg bg-gradient-to-b from-brand-400 to-brand-500 ring-1 ring-black ring-opacity-5 divide-brand-500">
               <div className="px-5 pt-5 pb-6">
                 <div className="flex items-center justify-between">
                   <div>
@@ -77,7 +77,7 @@ const Header: React.FC = () => {
                     />
                   </div>
                   <div className="-mr-2">
-                    <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-200 rounded-md hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-brand-600">
+                    <Popover.Button className="inline-flex items-center justify-center p-2 rounded-md text-dark-500 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-dark-500">
                       <span className="sr-only">Close menu</span>
                       <XIcon className="w-6 h-6" aria-hidden="true" />
                     </Popover.Button>
@@ -90,7 +90,7 @@ const Header: React.FC = () => {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="text-sm italic font-normal text-gray-300 uppercase hover:text-pink-600"
+                      className="text-sm font-semibold uppercase text-dark-900 hover:text-pink-600"
                     >
                       {item.name}
                     </a>
