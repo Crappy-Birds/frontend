@@ -16,7 +16,7 @@ const benefits = [
   {
     name: 'Commercial Usage Rights',
     description:
-      'As long as you own the NFT, you have full commercial rights to it.',
+      'The holder has full rights to use their Crappy Birds for personal and commercial purposes.',
   },
   {
     name: 'A crappy profile picture',

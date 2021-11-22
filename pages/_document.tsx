@@ -42,11 +42,11 @@ class MyDocument extends Document {
             href="/favicon-16x16.png"
           />
           <link rel="manifest" href="/site.webmanifest" />
-          <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#df82f2" />
+          <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#E682F0" />
           <meta name="apple-mobile-web-app-title" content="Crappy Birds" />
           <meta name="application-name" content="Crappy Birds" />
-          <meta name="msapplication-TileColor" content="#df82f2" />
-          <meta name="theme-color" content="#df82f2" />
+          <meta name="msapplication-TileColor" content="#E682F0" />
+          <meta name="theme-color" content="#E682F0" />
 
           {/* <!-- Open Graph / Facebook --> */}
           <meta property="og:type" content="website" />
