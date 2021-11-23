@@ -5,10 +5,15 @@ import RandomThumbnail from '../../public/images/random-crappy-birds.png'
 
 const Mint = () => {
   const mintPrice = 400 // 0.04
+  const maxMint = 5
   const [birdAmount, setBirdAmount] = useState<number>()
 
-  const handleBirdAmountChange = (event: React.ChangeEvent<HTMLInputElement>) =>
-    setBirdAmount(Number(event.target.value))
+  const handleBirdAmountChange = (
+    event: React.ChangeEvent<HTMLInputElement>
+  ) => {
+    const amount = Number(event.target.value)
+    if (amount > 0) setBirdAmount(amount)
+  }
 
   return (
     <div
@@ -17,13 +22,15 @@ const Mint = () => {
     >
       <div className="max-w-xl px-4 mx-auto sm:px-6 lg:px-8 lg:max-w-7xl">
         <div className="flex flex-wrap items-center px-4 sm:px-0">
-          <div className="w-full md:w-2/3 lg:w-1/2">
-            <h3 className="text-3xl italic font-extrabold tracking-tight uppercase text-gray-50 sm:text-5xl">
-              Join The Nest
-            </h3>
-            <p className="mt-3 text-xl italic text-gray-300">
-              Birds of a feather, you know ...
-            </p>
+          <div className="w-full lg:w-1/2">
+            <div>
+              <h3 className="text-3xl italic font-extrabold tracking-tight uppercase text-gray-50 sm:text-5xl">
+                Join The Nest
+              </h3>
+              <p className="mt-3 text-xl italic text-gray-300">
+                Birds of a feather, you know ...
+              </p>
+            </div>
             <Image
               className="relative mx-auto"
               src={DrunkBird}
@@ -31,13 +38,13 @@ const Mint = () => {
             />
           </div>
 
-          <div className="w-full h-auto px-0 text-center lg:w-1/2 sm:px-8 md:-mx-4">
-            <div className="flex flex-col content-start w-full h-full p-4 space-y-4 text-left border shadow-xl border-brand-500 md:p-8 rounded-xl bg-dark-400">
+          <div className="flex flex-col justify-between w-full h-auto px-0 text-center lg:w-1/2 sm:px-8 md:-mx-4">
+            <div className="flex flex-col content-start w-full h-full p-4 space-y-4 text-left bg-black bg-opacity-50 shadow-lg backdrop-filter backdrop-blur-lg border-brand-500 md:p-8 rounded-xl">
               <h4 className="text-2xl italic capitalize md:text-3xl">
                 Get a Crappy Bird
               </h4>
               <p>Enter the amount of birds you would like to purchase.</p>
-              <div className="bg-[#191920] py-8 px-4 rounded-lg flex flex-row justify-between items-center">
+              <div className="flex flex-row items-center justify-between px-4 py-8 bg-black rounded-lg bg-opacity-20">
                 <div className="hidden md:inline">
                   <Image
                     className="relative mx-auto rounded-lg bg-brand-600"
@@ -64,19 +71,19 @@ const Mint = () => {
                       Mint amount
                     </label>
                     <span className="text-sm text-gray-400">
-                      Limited to 3 per user
+                      Limited to {maxMint} per user
                     </span>
                   </div>
                   <input
                     type="number"
                     min={1}
-                    max={3}
+                    max={maxMint}
                     step={1}
                     name="mint-amount"
                     id="mint-amount"
                     value={birdAmount}
                     onChange={(e) => handleBirdAmountChange(e)}
-                    className="block w-full h-12 border-gray-600 rounded-md shadow-sm peer out-of-range:border-red-500 bg-dark-500 focus:ring-brand-500 focus:border-brand-500 sm:text-sm"
+                    className="block w-full h-12 bg-black border-0 border-gray-600 rounded-md shadow-sm bg-opacity-30 peer out-of-range:border-red-500 focus:ring-brand-500 focus:border-brand-500 sm:text-sm"
                     placeholder="0"
                   />
                   <p
@@ -92,7 +99,7 @@ const Mint = () => {
                       Total :
                     </p>
                     <p className="text-lg font-bold uppercase sm:text-2xl">
-                      {(birdAmount * mintPrice) / 10000 || 0} ETH
+                      {(birdAmount * mintPrice) / 10000} ETH
                     </p>
                   </div>
                 )}
@@ -105,7 +112,7 @@ const Mint = () => {
                 </button>
               </div>
             </div>
-            <span className="text-sm text-gray-400">
+            <span className="pt-4 text-sm text-gray-400">
               Note: Ninety birds are being withheld from the sale. These will be
               used for giveaways, events — and for the team
             </span>
