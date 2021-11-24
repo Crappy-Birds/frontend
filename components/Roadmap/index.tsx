@@ -89,7 +89,7 @@ const Roadmap = ({}) => {
           Roadmap
         </h2>
         <div className="flex flex-wrap items-center justify-center w-full mt-12">
-          <div className="flow-root w-full px-0 sm:px-4 lg:w-1/2">
+          <div className="flex flex-col justify-between w-full px-0 sm:px-4 lg:w-1/2">
             <ul className="-mb-8">
               {timeline.map((milestone, milestoneId) => (
                 <li key={milestone.id}>
@@ -135,10 +135,10 @@ const Roadmap = ({}) => {
                   </div>
                 </li>
               ))}
-              <span className="text-sm text-gray-400">
-                Note: A fully fledged roadmap will be released after the sale.
-              </span>
             </ul>
+            <span className="pt-4 text-sm text-gray-400">
+              Note: A fully fledged roadmap will be released after the sale.
+            </span>
           </div>
           <div className="w-full lg:w-1/2">
             <Image
