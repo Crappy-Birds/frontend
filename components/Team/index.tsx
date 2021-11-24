@@ -1,25 +1,35 @@
 import Image from 'next/image'
 import Fafifox from '../../public/images/team_fafifox.png'
 import Yam from '../../public/images/team_yam.png'
+import Luax from '../../public/images/team_luax.png'
 
 const people = [
   {
     name: 'fafifox',
     role: 'CEO & Co-Founder',
-    bio: 'also made some crappy pixel art',
+    bio: 'Software Engineer, also make crappy pixel art',
     imageUrl: Fafifox,
     twitterUrl: 'https://twitter.com/fafif0x',
-    linkedinUrl: 'https://www.linkedin.com/in/hugo-malatrait-9618b7135/',
+    linkedinUrl: 'https://www.linkedin.com/in/hugomalatrait',
     githubUrl: 'https://github.com/fafifox',
   },
   {
     name: 'yam',
     role: 'CTO & Co-Founder',
-    bio: ':glad:',
+    bio: 'Software & Machine Learning Engineer',
     imageUrl: Yam,
     twitterUrl: 'https://twitter.com/CaptaineDoge',
     linkedinUrl: 'https://www.linkedin.com/in/saad-el-madafri-4ab208190/',
     githubUrl: 'https://github.com/yamidevs',
+  },
+  {
+    name: 'luax',
+    role: 'Advisor',
+    bio: 'Blockchain Developer & NFT Builder',
+    imageUrl: Luax,
+    twitterUrl: 'https://twitter.com/Luax0',
+    linkedinUrl: 'https://www.linkedin.com/in/yann-guineau/',
+    githubUrl: 'https://github.com/LuaxY',
   },
 ]
 
@@ -30,7 +40,7 @@ const Team = ({}) => {
         <h2 className="px-4 text-3xl italic font-extrabold leading-8 tracking-tight uppercase sm:px-0 md:text-center text-gray-50 sm:text-5xl">
           Team
         </h2>
-        <ul className="max-w-2xl px-4 mx-auto mt-12 space-y-12 sm:px-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-2 lg:gap-x-8">
+        <ul className="max-w-5xl px-4 mx-auto mt-12 space-y-12 sm:px-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8">
           {people.map((person) => (
             <li key={person.name}>
               <div className="space-y-4">
