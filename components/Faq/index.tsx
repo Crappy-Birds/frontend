@@ -8,6 +8,10 @@ const faqs = [
       "The Crappy Birds: Genesis collection is made of 9,000 randomly generated birds made to bootstrap the game development, the community and what's around it.",
   },
   {
+    question: 'What chain are Crappy Birds minted on ?',
+    answer: 'On the Ethereum blockchain as ERC-721 tokens.',
+  },
+  {
     question: 'What are the perks of having a Crappy Birds: Genesis NFT ?',
     answer:
       'Private community membership, game early access, whitelisted for future sales and more through roadmap activations.',
