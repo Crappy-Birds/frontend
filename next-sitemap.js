@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: 'https://crappybirds.io',
+  siteUrl: 'https://www.crappybirds.io',
   changefreq: 'weekly',
   generateRobotsTxt: true,
 }
