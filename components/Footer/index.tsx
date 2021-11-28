@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaDiscord, FaTwitter } from 'react-icons/fa'
+import { FaDiscord, FaTwitter, FaGithub } from 'react-icons/fa'
 
 const navigation = [
   {
@@ -11,6 +11,11 @@ const navigation = [
     name: 'Twitter',
     href: 'https://twitter.com/crappybirds',
     icon: FaTwitter,
+  },
+  {
+    name: 'Github',
+    href: 'https://github.com/Crappy-Birds',
+    icon: FaGithub,
   },
 ]
 
