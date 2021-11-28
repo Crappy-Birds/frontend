@@ -8,7 +8,6 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        //primary: ['Inter var', ...defaultTheme.fontFamily.sans],
         primary: ['Montserrat', ...defaultTheme.fontFamily.sans],
       },
       colors: {
@@ -18,8 +17,6 @@ module.exports = {
           900: '#030104',
         },
         brand: {
-          //500: '#FF0090',
-          //500: '#FFD707',
           300: '#FFDA00',
           400: '#eb96f3',
           500: '#E682F0',

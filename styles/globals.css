@@ -26,7 +26,7 @@
   }
 
   body {
-    @apply text-sm bg-dark-500 font-primary md:text-base text-gray-50; /* bg-[#0F172A] */
+    @apply text-sm font-normal bg-dark-500 font-primary md:text-base text-gray-50;
   }
 
   :root {
