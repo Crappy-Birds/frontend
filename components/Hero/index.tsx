@@ -10,8 +10,8 @@ const Hero = () => {
             className="object-fill w-auto h-full objec md:object-cover"
             src={HeroImage}
             alt="Crappy Birds having fun in The Nest"
-            width={1440}
-            height={720}
+            width={1216}
+            height={608}
             quality="100"
             layout="responsive"
             priority={true}
