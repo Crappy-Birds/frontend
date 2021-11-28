@@ -44,12 +44,13 @@ const Team = ({}) => {
           {people.map((person) => (
             <li key={person.name}>
               <div className="space-y-4">
-                <div className="aspect-w-1 aspect-h-1">
+                <div className="aspect-w-1">
                   <Image
                     className="object-cover rounded-lg shadow-lg"
                     src={person.imageUrl}
-                    layout="fill"
-                    alt="Team Member Picture"
+                    width={320}
+                    height={320}
+                    alt={`Team Member Picture - ${person.name}`}
                   />
                 </div>
 
