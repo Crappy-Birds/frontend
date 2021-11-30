@@ -14,7 +14,7 @@ const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Crappy Birds</title>
+        <title>Crappy Birds - Fun & Social MMO game leveraging NFTs</title>
       </Head>
 
       <Header />
