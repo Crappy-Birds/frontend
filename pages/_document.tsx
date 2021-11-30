@@ -18,10 +18,13 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <meta name="title" content="Crappy Birds" />
+          <meta
+            name="title"
+            content="Crappy Birds - Fun & Social MMO game leveraging NFTs"
+          />
           <meta
             name="description"
-            content="9,000 Crappy Birds hanging out in The Nest."
+            content="Genesis: 9,000 Crappy Birds hanging out in The Nest."
           />
           {/* favicons */}
           <link
@@ -51,10 +54,13 @@ class MyDocument extends Document {
           {/* <!-- Open Graph / Facebook --> */}
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://www.crappybirds.io/" />
-          <meta property="og:title" content="Crappy Birds" />
+          <meta
+            property="og:title"
+            content="Crappy Birds - Fun & Social MMO game leveraging NFTs"
+          />
           <meta
             property="og:description"
-            content="9,000 Crappy Birds hanging out in The Nest."
+            content="Genesis: 9,000 Crappy Birds hanging out in The Nest."
           />
           <meta
             property="og:image"
@@ -64,10 +70,13 @@ class MyDocument extends Document {
           {/* <!-- Twitter --> */}
           <meta property="twitter:card" content="summary_large_image" />
           <meta property="twitter:url" content="https://www.crappybirds.io/" />
-          <meta property="twitter:title" content="Crappy Birds" />
+          <meta
+            property="twitter:title"
+            content="Crappy Birds - Fun & Social MMO game leveraging NFTs"
+          />
           <meta
             property="twitter:description"
-            content="9,000 Crappy Birds hanging out in The Nest."
+            content="Genesis: 9,000 Crappy Birds hanging out in The Nest."
           />
           <meta
             property="twitter:image"
