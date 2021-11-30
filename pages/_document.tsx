@@ -18,6 +18,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          <link rel="canonical" href="https://www.crappybirds.io/" />
           <meta
             name="title"
             content="Crappy Birds - Fun & Social MMO game leveraging NFTs"
