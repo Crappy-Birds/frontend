@@ -69,6 +69,8 @@ class MyDocument extends Document {
 
           {/* <!-- Twitter --> */}
           <meta property="twitter:card" content="summary_large_image" />
+          <meta name="twitter:site" content="@crappybirds" />
+          <meta name="twitter:creator" content="@fafif0x" />
           <meta property="twitter:url" content="https://www.crappybirds.io/" />
           <meta
             property="twitter:title"
