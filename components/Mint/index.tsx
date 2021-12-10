@@ -58,7 +58,7 @@ const Mint = () => {
                     <span className="text-brand-600">{mintPrice / 10000}</span>{' '}
                     ETH Each
                   </p>
-                  <p className="text-lg">9,000 remaining</p>
+                  <p className="text-lg">3,000 remaining</p>
                 </div>
               </div>
               <div className="space-y-4">

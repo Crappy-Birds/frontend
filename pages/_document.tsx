@@ -25,7 +25,7 @@ class MyDocument extends Document {
           />
           <meta
             name="description"
-            content="Genesis: 9,000 Crappy Birds hanging out in The Nest."
+            content="Genesis: 3,000 Crappy Birds hanging out in The Nest."
           />
           {/* favicons */}
           <link
@@ -61,7 +61,7 @@ class MyDocument extends Document {
           />
           <meta
             property="og:description"
-            content="Genesis: 9,000 Crappy Birds hanging out in The Nest."
+            content="Genesis: 3,000 Crappy Birds hanging out in The Nest."
           />
           <meta
             property="og:image"
@@ -79,7 +79,7 @@ class MyDocument extends Document {
           />
           <meta
             property="twitter:description"
-            content="Genesis: 9,000 Crappy Birds hanging out in The Nest."
+            content="Genesis: 3,000 Crappy Birds hanging out in The Nest."
           />
           <meta
             property="twitter:image"

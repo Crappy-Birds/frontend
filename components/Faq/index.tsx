@@ -5,7 +5,7 @@ const faqs = [
   {
     question: 'What is this NFT collection about ?',
     answer:
-      "The Crappy Birds: Genesis collection is made of 9,000 randomly generated birds made to bootstrap the game development, the community and what's around it.",
+      "The Crappy Birds: Genesis collection is made of 3,000 randomly generated birds made to bootstrap the game development, the community and what's around it.",
   },
   {
     question: 'What chain are Crappy Birds minted on ?',

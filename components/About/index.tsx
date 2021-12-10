@@ -51,7 +51,7 @@ const About = () => {
               Genesis Drop
             </h2>
             <p className="mt-3 text-lg text-gray-200">
-              Crappy Birds : Genesis is an NFT collection made of 9,000 unique
+              Crappy Birds : Genesis is an NFT collection made of 3,000 unique
               birds, randomly generated from over 170 attributes across 10
               categories.
               <br />
