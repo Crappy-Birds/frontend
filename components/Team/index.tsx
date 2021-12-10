@@ -53,14 +53,12 @@ const Team = ({}) => {
           {people.map((person) => (
             <li key={person.name}>
               <div className="space-y-4">
-                <div className="relative aspect-w-1 aspect-h-1">
+                <div className="relative aspect-w-1">
                   <Image
                     className="object-cover rounded-lg shadow-lg"
                     src={person.imageUrl}
                     width={368}
                     height={368}
-                    layout="fill"
-                    objectFit="contain"
                     alt={`Team Member Picture - ${person.name}`}
                   />
                 </div>
