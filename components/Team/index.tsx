@@ -57,8 +57,8 @@ const Team = ({}) => {
                   <Image
                     className="object-cover rounded-lg shadow-lg"
                     src={person.imageUrl}
-                    width={368}
-                    height={368}
+                    width={400}
+                    height={400}
                     alt={`Team Member Picture - ${person.name}`}
                   />
                 </div>
