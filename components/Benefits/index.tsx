@@ -2,37 +2,34 @@ import { HiCheck } from 'react-icons/hi'
 
 const benefits = [
   {
-    //name: 'Private Community Membership',
-    name: 'Community Membership',
-    description:
-      //'Access to private Discord channels, network with fellow Crappy Birds and get development insights from the team before anyone else.',
-      'Access to private Discord channels and get development insights from the team before anyone else.',
-  },
-  {
-    name: 'Whitelisted',
-    description:
-      'Holding a Genesis bird guarantees you a whitelist spot for future sales.',
-  },
-  {
-    name: 'Commercial Usage Rights',
-    description:
-      'The holder has full rights to use their Crappy Birds for personal and commercial purposes.',
-  },
-  {
-    name: 'A crappy profile picture',
-    description:
-      //'You may want to show off your bad taste by using your Crappy Bird as your profile picture',
-      'Using your Crappy Bird as profile picture might be a good way to show off your bad taste.',
+    name: 'Exclusive In-Game rewards',
+    description: 'Receive in-game rewards, such as cosmectics and title.',
   },
   {
     name: 'Early-Access',
     description:
-      'Try out the game first and get involved as the game evolve by taking part in closed alpha and beta.',
+      //'Try out the game first and get involved as the game evolve by taking part in closed alpha and beta.',
+      'Be the first to try out the game and get involved by taking part in closed alpha and beta.',
   },
   {
-    name: 'Exclusive In-Game rewards',
+    name: 'Whitelist',
     description:
-      'Receive a special title and seasonal airdrops for your character',
+      'Holding a Genesis Crappy Bird grants you a whitelist spot for future drop.',
+  },
+  {
+    name: 'Community Membership',
+    description:
+      'Access to private Discord channels and get development insights from the team before anyone else.',
+  },
+  {
+    name: 'A crappy profile picture',
+    description:
+      'Using your Crappy Bird as profile picture might be a good way to show off your bad taste.',
+  },
+  {
+    name: 'Commercial Usage Rights',
+    description:
+      'The holder has full rights to use their Genesis Crappy Birds for personal and commercial purposes.',
   },
 ]
 
