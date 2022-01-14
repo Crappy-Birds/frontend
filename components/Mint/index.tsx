@@ -4,7 +4,7 @@ import DrunkBird from '../../public/images/drunk-crappy-bird-01.png'
 import RandomThumbnail from '../../public/images/random-crappy-birds.png'
 
 const Mint = () => {
-  const mintPrice = 400 // 0.04
+  const mintPrice = 590 // 0.059
   const maxMint = 5
   const [birdAmount, setBirdAmount] = useState<number>()
 
