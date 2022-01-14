@@ -108,7 +108,7 @@ const Mint = () => {
                   className="flex justify-center w-full px-4 py-2 text-base italic font-bold text-white uppercase border border-transparent rounded-md shadow-sm disabled:cursor-not-allowed disabled:opacity-50 bg-brand-600 hover:bg-brand-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500"
                   disabled={true}
                 >
-                  Connect Wallet
+                  Connect Wallet - Coming Soon
                 </button>
               </div>
             </div>
