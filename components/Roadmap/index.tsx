@@ -1,46 +1,50 @@
 import Image from 'next/image'
 import DrunkBird from '../../public/images/drunk-crappy-bird-02.png'
 import { CgInfinity } from 'react-icons/cg'
+import { HiFlag } from 'react-icons/hi'
 
 const timeline = [
-  /* {
+  {
     id: 0,
-    title: 'Founder Sale',
-    content: 'Seed Sale begins',
-    date: 'Q4 2021',
-    percentage: '0%',
-    iconBackground: 'bg-dark-400  border-4 border-white',
-  }, */
+    title: 'Crappy Birds Online - Demo',
+    content:
+      'We publish a playable prototype of our game, accessible to everyone.',
+    date: 'Q1 2022',
+    percentage: '',
+    icon: HiFlag,
+    iconBackground: 'bg-brand-800',
+  },
   {
     id: 1,
-    title: 'Get the ball rolling',
-    content: 'Game development begins',
-    date: 'Q4 2021',
-    percentage: '10%',
+    title: 'Genesis NFT Drop',
+    content: 'We launch our Genesis NFT sale',
+    //content: 'We launch our Genesis NFT sale to raise funds to support the development of the game.',
+    date: 'Q1 2022',
+    percentage: '0%',
     iconBackground: 'bg-brand-800',
   },
   {
     id: 2,
-    title: 'Giveaways',
-    content: 'Birds get airdropped to the community',
-    date: 'Q4 2021',
-    percentage: '25%',
+    title: 'Get the ball rolling',
+    content: 'Game development continues',
+    date: 'Q1 2022',
+    percentage: '10%',
     iconBackground: 'bg-brand-800',
   },
   {
     id: 3,
-    title: '???',
-    content: '???',
-    date: '???',
-    percentage: '50%',
+    title: 'Giveaways',
+    content: 'Birds get airdropped to the community',
+    date: 'Q1 2022',
+    percentage: '25%',
     iconBackground: 'bg-brand-800',
   },
   {
     id: 4,
-    title: 'Exclusive Merch Store',
-    content: 'Featuring Limited Edition tees, hoodies, and other goodies.',
-    date: 'Q4 2021',
-    percentage: '75%',
+    title: '???',
+    content: '???',
+    date: '???',
+    percentage: '???',
     iconBackground: 'bg-brand-800',
   },
   {
@@ -49,10 +53,9 @@ const timeline = [
     //birds gives game access and serves as your avatar
     //'Think of Flappy Bird + Super Mario + Hollow Knight + Online Social features. Where your Crappy Bird gives you access to the game and serves as your avatar',
     //Fun & Social first Online Game with play-and-earn mechanics.
-    title: 'Fun & Social MMO Game',
+    title: 'Crappy Birds Online - Release',
     content:
-      //'Where your Crappy Bird gives you access to the game and serves as your avatar',
-      'Fun-first online game leveraging NFTs and play-and-earn mechanics.',
+      'Fun & Social MMO Game leveraging NFTs and play-and-earn mechanics.',
     date: 'PLANNED',
     percentage: '100%',
     iconBackground: 'bg-brand-800',
@@ -66,7 +69,7 @@ const timeline = [
       //'Something missing? Got a great idea? We want you to help us make it happen.',
       //Keep the ball rolling - Game maintenace and updates, DAO, Events ...
       //'We keep the game up and running with new updates. And more to come ...',
-      'Game maintenace, Game updates, Events and more to come ...',
+      'Game maintenance, Game updates, Exclusive Merch, Events and more to come ...',
     date: '& BEYOND',
     icon: CgInfinity,
     percentage: '',
@@ -136,9 +139,9 @@ const Roadmap = ({}) => {
                 </li>
               ))}
             </ul>
-            <span className="pt-4 text-sm text-gray-400">
+            {/* <span className="pt-4 text-sm text-gray-400">
               Note: A fully fledged roadmap will be released after the sale.
-            </span>
+            </span> */}
           </div>
           <div className="w-full lg:w-1/2">
             <Image
