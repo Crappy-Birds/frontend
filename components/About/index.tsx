@@ -31,20 +31,6 @@ const About = () => {
         <h1 className="text-3xl italic font-extrabold leading-8 tracking-tight uppercase md:text-center sm:text-5xl">
           About those Crappy Birds
         </h1>
-        {/*
-        <h1 className="text-3xl italic font-extrabold leading-8 tracking-tight uppercase md:text-center sm:text-5xl">
-          About those Crappy Birds
-        </h1>
-        <p className="max-w-3xl mx-auto mt-4 text-lg text-gray-200 md:text-center">
-          In a world where humans are no more. Some weird birds have survived,
-          and for better or worse, they have discovered and adopted human
-          culture.
-          <br />
-          <br />
-          They now like to hang out in a place called The Nest, to relax, have a
-          drink, hang out with friends, throw parties or events, well, it&apos;s
-          a place to have fun and cheer up ...
-        </p> */}
 
         <div className="mt-8 lg:mt-12 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
           <div>
@@ -57,12 +43,13 @@ const About = () => {
               categories.
               <br />
               <br />
-              Our goal is to build a strong brand and develop a multiplayer
-              online game including play-and-earn mechanics, funds from the sale
-              will be used to bootstrap and develop the Crappy Birds ecosystem.
-              {/* <br />
+              Our main goal is to build a fun-first and social game experience.
               <br />
-              They are stored as ERC-721 tokens on the Ethereum blockchain */}
+              <br />
+              Funds raised will be used to develop Crappy Birds Online,
+              <br />
+              our 2D side-scrolling platformer MMO game, and to incorporate
+              play-and-earn mechanics by leveraging NFTs.
             </p>
 
             <dl className="mt-10 space-y-10">
