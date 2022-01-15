@@ -54,10 +54,7 @@ const people = [
 
 const Team = ({}) => {
   return (
-    <div
-      className="py-16 overflow-hidden bg-[#FFF2AF] lg:py-24 border-t-4 border-opacity-50 border-dark-500 border-dashed"
-      id="team"
-    >
+    <div className="py-16 overflow-hidden bg-[#FFF2AF] lg:py-24" id="team">
       <div className="max-w-xl px-4 mx-auto sm:px-6 lg:px-8 lg:max-w-7xl">
         <h2 className="px-4 text-3xl italic font-extrabold leading-8 tracking-tight uppercase sm:px-0 md:text-center sm:text-5xl">
           Team
@@ -66,13 +63,14 @@ const Team = ({}) => {
           {people.map((person) => (
             <li key={person.name}>
               <div className="space-y-4">
-                <div className="relative transition-transform duration-300 aspect-w-1 aspect-h-1 hover:-rotate-3">
-                  <div className="border-8 border-white rounded-lg shadow-lg">
+                <div className="transition-transform duration-300 aspect-w-1 aspect-h-1 hover:-rotate-3">
+                  <div className="block border-8 border-white rounded-lg shadow-lg">
                     <Image
-                      className="object-contain"
                       src={person.imageUrl}
-                      layout="fill"
-                      alt={`Team Member Picture - ${person.name}`}
+                      layout="responsive"
+                      objectFit="contain"
+                      placeholder="blur"
+                      alt={`Crappy Birds Team Member Picture - ${person.name}`}
                     />
                   </div>
                 </div>

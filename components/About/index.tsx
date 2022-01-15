@@ -81,17 +81,21 @@ const About = () => {
             </dl>
           </div>
 
-          <div
-            className="relative mx-auto my-10 border-8 border-white rounded-lg shadow-lg lg:my-0 lg:place-self-end max-h-[528px]"
-            aria-hidden="true"
-          >
-            <Image
-              className="relative object-cover"
-              src={BirdsGif}
-              width={512}
-              height={512}
-              alt="Crappy Birds NFT Preview"
-            />
+          {/* <div className="relative mx-auto my-10 aspect-w-1 aspect-h-1 w-full max-w-[512px] max-h-[512px] lg:my-0 lg:place-self-end"> */}
+          <div className="max-w-[512px] max-h-[512px] mx-auto h-full w-full my-10 lg:my-0 md:place-self-end">
+            <div className="relative aspect-w-1 aspect-h-1">
+              <div
+                className="transition-transform duration-300 border-8 border-white rounded-lg shadow-xl hover:rotate-3"
+                aria-hidden="true"
+              >
+                <Image
+                  src={BirdsGif}
+                  layout="fill"
+                  objectFit="cover"
+                  alt="Crappy Birds: Genesis NFT collection preview"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>

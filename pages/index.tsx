@@ -22,9 +22,13 @@ const Home: NextPage = () => {
         <Hero />
         <About />
         <Benefits />
+        <div className="absolute z-10 w-full h-4 border-t-4 border-opacity-50 border-dashed border-dark-500"></div>
         <Mint />
+        <div className="absolute w-full h-4 border-t-4 border-opacity-50 border-dashed border-dark-500"></div>
         <Roadmap />
+        <div className="absolute w-full h-4 border-t-4 border-opacity-50 border-dashed border-dark-500 rotate-3"></div>
         <Faq />
+        <div className="absolute w-full h-4 border-t-4 border-opacity-50 border-dashed border-dark-500 -rotate-3"></div>
         <Team />
       </main>
       <Footer />

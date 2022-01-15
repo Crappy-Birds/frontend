@@ -60,7 +60,7 @@ function classNames(...classes: string[]) {
 const Faq = ({}) => {
   return (
     <div
-      className="py-16 overflow-hidden lg:py-24 bg-gradient-to-b from-[#FFF8D2] to-[#FFF2AF] border-t-4 border-opacity-50 border-dark-500 border-dashed"
+      className="py-16 overflow-hidden lg:py-24 bg-gradient-to-b from-[#FFF8D2] to-[#FFF2AF]"
       id="faq"
     >
       <div className="max-w-xl px-4 mx-auto sm:px-6 lg:px-8 lg:max-w-7xl">

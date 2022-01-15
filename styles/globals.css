@@ -28,7 +28,11 @@
   }
 
   body {
-    @apply text-sm font-normal text-gray-900 md:text-base bg-dark-500 font-primary;
+    @apply text-sm font-normal text-gray-900 bg-white md:text-base font-primary;
+  }
+
+  html, body {
+    @apply h-full
   }
 
   :root {

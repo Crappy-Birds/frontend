@@ -1,6 +1,7 @@
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
+import Logo from '../../public/images/logo.png'
 import Image from 'next/image'
 
 const navigation = [
@@ -11,8 +12,6 @@ const navigation = [
   { name: 'Team', href: '#team' },
 ]
 
-const logo = '/images/logo.png'
-
 const Header: React.FC = () => {
   return (
     <header>
@@ -22,10 +21,11 @@ const Header: React.FC = () => {
             <span className="sr-only">Crappy Birds</span>
             <div className="absolute top-0 z-10 w-1/2 h-auto max-w-md transition-transform duration-500 xl:-translate-x-7 2xl:-translate-x-12 md:w-1/4 xl:w-full translate-y-1/3 md:translate-y-2/4 xl:translate-y-1/4 -rotate-2 hover:rotate-2">
               <Image
-                src={logo}
+                src={Logo}
                 alt="Crappy Birds Logo"
                 width={498}
                 height={115}
+                placeholder="blur"
               />
             </div>
           </div>
@@ -70,8 +70,9 @@ const Header: React.FC = () => {
                   <div>
                     <Image
                       className="w-auto h-8"
-                      src={logo}
-                      alt="Logo Crappy Birds"
+                      src={Logo}
+                      alt="Crappy Birds Logo"
+                      placeholder="blur"
                       width={498 / 3}
                       height={115 / 3}
                     />

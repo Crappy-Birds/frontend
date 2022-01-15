@@ -82,7 +82,7 @@ function classNames(...classes: string[]) {
 const Roadmap = ({}) => {
   return (
     <div
-      className="py-16 overflow-hidden lg:py-24 bg-gradient-to-b from-[#FFFBF3] to-[#FFF8D2] border-t-4 border-opacity-50 border-dark-500 border-dashed"
+      className="py-16 overflow-hidden lg:py-24 bg-gradient-to-b from-[#FFFBF3] to-[#FFF8D2]"
       id="roadmap"
     >
       <div className="max-w-xl px-4 mx-auto sm:px-6 lg:px-8 lg:max-w-7xl">
@@ -141,6 +141,7 @@ const Roadmap = ({}) => {
             <Image
               className="relative mx-auto"
               src={DrunkBird}
+              placeholder="blur"
               alt="A drunk Crappy Bird is presenting the roadmap"
             />
           </div>
