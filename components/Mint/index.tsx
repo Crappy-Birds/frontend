@@ -17,20 +17,26 @@ const Mint = () => {
 
   return (
     <div
-      className="py-16 overflow-hidden lg:py-24 bg-gradient-to-b from-brand-700 to-brand-800"
+      className="py-16 overflow-hidden border-t-4 border-opacity-50 border-dashed lg:py-24 bg-brand-400 border-dark-500"
       id="mint"
     >
       <div className="max-w-xl px-4 mx-auto sm:px-6 lg:px-8 lg:max-w-7xl">
-        <div className="flex flex-wrap items-center px-4 sm:px-0">
+        <h1 className="text-3xl italic font-extrabold leading-8 tracking-tight uppercase md:text-center sm:text-5xl">
+          Join The Nest
+        </h1>
+        <p className="max-w-3xl mx-auto mt-4 text-lg text-gray-700 md:text-center">
+          Birds of a feather, you know ...
+        </p>
+        <div className="flex flex-wrap items-center px-4 mt-12 sm:px-0">
           <div className="w-full lg:w-1/2">
-            <div>
-              <h3 className="text-3xl italic font-extrabold tracking-tight uppercase text-gray-50 sm:text-5xl">
-                Join The Nest
+            {/* <div>
+              <h3 className="text-3xl italic font-extrabold tracking-tight uppercase sm:text-5xl">
+                Get a Bird
               </h3>
-              <p className="mt-3 text-xl italic text-gray-300">
+              <p className="mt-3 text-xl italic text-gray-700">
                 Birds of a feather, you know ...
               </p>
-            </div>
+            </div> */}
             <Image
               className="relative mx-auto"
               src={DrunkBird}
@@ -40,10 +46,12 @@ const Mint = () => {
 
           <div className="flex flex-col justify-between w-full h-auto px-0 text-center lg:w-1/2 sm:px-8 md:-mx-4">
             <div className="flex flex-col content-start w-full h-full p-4 space-y-4 text-left bg-black bg-opacity-50 shadow-lg backdrop-filter backdrop-blur-lg border-brand-500 md:p-8 rounded-xl">
-              <h4 className="text-2xl italic capitalize md:text-3xl">
+              <h4 className="text-2xl italic text-white md:text-3xl">
                 Get a Crappy Bird
               </h4>
-              <p>Enter the amount of birds you would like to purchase.</p>
+              {/* <p className="text-white">
+                Enter the amount of birds you would like to mint.
+              </p> */}
               <div className="flex flex-row items-center justify-between px-4 py-8 bg-black rounded-lg bg-opacity-20">
                 <div className="hidden md:inline">
                   <Image
@@ -52,7 +60,7 @@ const Mint = () => {
                     alt=""
                   />
                 </div>
-                <div className="md:content-end md:text-right">
+                <div className="text-white md:content-end md:text-right">
                   <p className="text-lg font-medium">Price per Crappy Bird</p>
                   <p className="text-2xl italic font-bold">
                     <span className="text-brand-600">{mintPrice / 10000}</span>{' '}
@@ -66,11 +74,11 @@ const Mint = () => {
                   <div className="flex justify-between">
                     <label
                       htmlFor="mint-amount"
-                      className="block text-sm font-medium text-gray-300"
+                      className="block text-sm font-medium text-gray-200"
                     >
                       Mint amount
                     </label>
-                    <span className="text-sm text-gray-400">
+                    <span className="text-sm text-gray-300">
                       Limited to {maxMint} per user
                     </span>
                   </div>
@@ -83,7 +91,7 @@ const Mint = () => {
                     id="mint-amount"
                     value={birdAmount}
                     onChange={(e) => handleBirdAmountChange(e)}
-                    className="block w-full h-12 bg-black border-0 border-gray-600 rounded-md shadow-sm bg-opacity-30 peer out-of-range:border-red-500 focus:ring-brand-500 focus:border-brand-500 sm:text-sm"
+                    className="block w-full h-12 text-white bg-black border-0 border-gray-600 rounded-md shadow-sm bg-opacity-30 peer out-of-range:border-red-500 focus:ring-brand-500 focus:border-brand-500 sm:text-sm"
                     placeholder="0"
                   />
                   <p
@@ -94,7 +102,7 @@ const Mint = () => {
                   </p>
                 </div>
                 {birdAmount && (
-                  <div className="flex justify-between transition-all duration-700">
+                  <div className="flex justify-between text-white transition-all duration-700">
                     <p className="text-lg font-bold uppercase sm:text-2xl">
                       Total :
                     </p>
@@ -112,7 +120,7 @@ const Mint = () => {
                 </button>
               </div>
             </div>
-            <span className="pt-4 text-sm text-gray-400">
+            <span className="pt-4 text-sm text-gray-600">
               Note: Ninety birds are being withheld from the sale. These will be
               used for giveaways, events — and for the team
             </span>

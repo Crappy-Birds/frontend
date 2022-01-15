@@ -21,10 +21,10 @@ const faqs = [
     answer:
       'Yes, royalties are set at 5%. We strongly believe in community-driven development, and as part of our growth strategy, money earned from secondary sales will be used to grow the game.',
   },
-  {
+  /* {
     question: 'What is the game genre of Crappy Birds ?',
     answer: '2D side-scrolling platformer / Metroidvania / MMO',
-  },
+  }, */
   {
     question: 'What is your inspiration for the Crappy Birds game ?',
     answer:
@@ -33,12 +33,17 @@ const faqs = [
   {
     question: 'Will there be a play-and-earn aspect to the game ?',
     answer:
-      'Yes. We want to create a fun game first, and then implement play-and-earn mechanics in a smooth way.',
+      'Ultimately yes. We want to create a fun game first, and then implement play-and-earn mechanics in a smooth way.',
   },
   {
     question: 'Do you plan to launch ERC20 tokens for the game ?',
     answer:
       'Most likely yes, as a play-and-earn game would need one or more currencies in the game.',
+  },
+  {
+    question: 'How the raised funds will be allocated ?',
+    answer:
+      '70% will be used for the game development, 30% remaining will be split between team members.',
   },
   {
     question:
@@ -55,11 +60,11 @@ function classNames(...classes: string[]) {
 const Faq = ({}) => {
   return (
     <div
-      className="py-16 overflow-hidden lg:py-24 bg-gradient-to-b from-dark-500 to-black"
+      className="py-16 overflow-hidden lg:py-24 bg-gradient-to-b from-[#FFF8D2] to-[#FFF2AF] border-t-4 border-opacity-50 border-dark-500 border-dashed"
       id="faq"
     >
       <div className="max-w-xl px-4 mx-auto sm:px-6 lg:px-8 lg:max-w-7xl">
-        <h2 className="px-4 text-3xl italic font-extrabold leading-8 tracking-tight uppercase sm:px-0 md:text-center text-gray-50 sm:text-5xl">
+        <h2 className="px-4 text-3xl italic font-extrabold leading-8 tracking-tight uppercase sm:px-0 md:text-center sm:text-5xl">
           FAQ
         </h2>
         <div className="max-w-3xl mx-auto">
@@ -69,8 +74,8 @@ const Faq = ({}) => {
                 {({ open }) => (
                   <>
                     <dt className="text-lg">
-                      <Disclosure.Button className="flex items-start justify-between w-full text-left text-gray-400">
-                        <span className="font-medium text-gray-100">
+                      <Disclosure.Button className="flex items-start justify-between w-full text-left text-gray-800">
+                        <span className="font-medium text-gray-900">
                           {faq.question}
                         </span>
                         <span className="flex items-center ml-6 h-7">
@@ -93,7 +98,7 @@ const Faq = ({}) => {
                       leaveTo="transform scale-95 opacity-0"
                     >
                       <Disclosure.Panel as="dd" className="pr-12 mt-2" static>
-                        <p className="text-base text-gray-400">{faq.answer}</p>
+                        <p className="text-base text-gray-700">{faq.answer}</p>
                       </Disclosure.Panel>
                     </Transition>
                   </>

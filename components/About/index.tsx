@@ -24,16 +24,17 @@ const socialFeatures = [
 const About = () => {
   return (
     <div
-      className="py-16 overflow-hidden lg:py-24 bg-gradient-to-b from-brand-600 via-[#1D3D5A] to-dark-400"
+      className="py-16 overflow-hidden lg:py-24 bg-gradient-to-b from-brand-500 to-[#FFFBF3]"
       id="about"
     >
       <div className="max-w-xl px-4 mx-auto sm:px-6 lg:px-8 lg:max-w-7xl">
-        <h1 className="text-3xl italic font-extrabold leading-8 tracking-tight uppercase text-gray-50 md:text-center sm:text-5xl">
+        <h1 className="text-3xl italic font-extrabold leading-8 tracking-tight uppercase md:text-center sm:text-5xl">
           About those Crappy Birds
         </h1>
-        {/* <h2 className="text-3xl italic font-extrabold leading-8 tracking-tight uppercase md:text-center text-gray-50 sm:text-5xl">
-          Welcome to The Nest
-        </h2>*/}
+        {/*
+        <h1 className="text-3xl italic font-extrabold leading-8 tracking-tight uppercase md:text-center sm:text-5xl">
+          About those Crappy Birds
+        </h1>
         <p className="max-w-3xl mx-auto mt-4 text-lg text-gray-200 md:text-center">
           In a world where humans are no more. Some weird birds have survived,
           and for better or worse, they have discovered and adopted human
@@ -43,14 +44,14 @@ const About = () => {
           They now like to hang out in a place called The Nest, to relax, have a
           drink, hang out with friends, throw parties or events, well, it&apos;s
           a place to have fun and cheer up ...
-        </p>
+        </p> */}
 
-        <div className="mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
+        <div className="mt-8 lg:mt-12 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
           <div>
-            <h2 className="text-2xl italic font-extrabold tracking-tight text-white uppercase sm:text-3xl">
+            <h2 className="text-2xl italic font-extrabold tracking-tight uppercase sm:text-3xl">
               Genesis Drop
             </h2>
-            <p className="mt-3 text-lg text-gray-200">
+            <p className="mt-3 text-lg font-medium">
               Crappy Birds : Genesis is an NFT collection made of 3,000 unique
               birds, randomly generated from over 170 attributes across 10
               categories.
@@ -77,7 +78,7 @@ const About = () => {
                       <item.icon className="w-6 h-6" aria-hidden="true" />
                     </div>
                     <a
-                      className="ml-16 text-lg font-medium leading-6 text-gray-100 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:content-['']"
+                      className="ml-16 text-lg font-medium leading-6 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:content-['']"
                       href={item.link}
                       target="_blank"
                       rel="noreferrer"
@@ -85,7 +86,7 @@ const About = () => {
                       {item.name}
                     </a>
                   </dt>
-                  <dd className="mt-2 ml-16 text-base text-gray-400 duration-500 group-hover:text-gray-300">
+                  <dd className="mt-2 ml-16 text-base text-gray-600 duration-500 group-hover:text-gray-700">
                     {item.description}
                   </dd>
                 </div>
@@ -94,11 +95,11 @@ const About = () => {
           </div>
 
           <div
-            className="relative mt-10 md:-mx-4 lg:mt-0 lg:place-self-end"
+            className="relative mx-auto my-10 border-8 border-white rounded-lg shadow-lg lg:my-0 lg:place-self-end max-h-[528px]"
             aria-hidden="true"
           >
             <Image
-              className="relative object-cover mx-auto rounded-lg shadow-lg"
+              className="relative object-cover"
               src={BirdsGif}
               width={512}
               height={512}

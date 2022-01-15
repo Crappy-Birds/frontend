@@ -12,7 +12,7 @@ const timeline = [
     date: 'Q1 2022',
     percentage: '',
     icon: HiFlag,
-    iconBackground: 'bg-brand-800',
+    iconBackground: 'bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg',
   },
   {
     id: 1,
@@ -21,7 +21,7 @@ const timeline = [
     //content: 'We launch our Genesis NFT sale to raise funds to support the development of the game.',
     date: 'Q1 2022',
     percentage: '0%',
-    iconBackground: 'bg-brand-800',
+    iconBackground: 'bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg',
   },
   {
     id: 2,
@@ -29,7 +29,7 @@ const timeline = [
     content: 'Game development continues',
     date: 'Q1 2022',
     percentage: '10%',
-    iconBackground: 'bg-brand-800',
+    iconBackground: 'bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg',
   },
   {
     id: 3,
@@ -37,7 +37,7 @@ const timeline = [
     content: 'Birds get airdropped to the community',
     date: 'Q1 2022',
     percentage: '25%',
-    iconBackground: 'bg-brand-800',
+    iconBackground: 'bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg',
   },
   {
     id: 4,
@@ -45,7 +45,7 @@ const timeline = [
     content: '???',
     date: '???',
     percentage: '???',
-    iconBackground: 'bg-brand-800',
+    iconBackground: 'bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg',
   },
   {
     id: 5,
@@ -58,7 +58,7 @@ const timeline = [
       'Fun & Social MMO Game leveraging NFTs and play-and-earn mechanics.',
     date: 'PLANNED',
     percentage: '100%',
-    iconBackground: 'bg-brand-800',
+    iconBackground: 'bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg',
   },
   {
     id: 6,
@@ -73,7 +73,7 @@ const timeline = [
     date: '& BEYOND',
     icon: CgInfinity,
     percentage: '',
-    iconBackground: 'bg-brand-800',
+    iconBackground: 'bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg',
   },
 ]
 
@@ -84,11 +84,11 @@ function classNames(...classes: string[]) {
 const Roadmap = ({}) => {
   return (
     <div
-      className="py-16 overflow-hidden lg:py-24 bg-gradient-to-b from-brand-800 to-dark-500"
+      className="py-16 overflow-hidden lg:py-24 bg-gradient-to-b from-[#FFFBF3] to-[#FFF8D2] border-t-4 border-opacity-50 border-dark-500 border-dashed"
       id="roadmap"
     >
       <div className="max-w-xl px-4 mx-auto sm:px-6 lg:px-8 lg:max-w-7xl">
-        <h2 className="px-4 text-3xl italic font-extrabold leading-8 tracking-tight uppercase sm:px-0 md:text-center text-gray-50 sm:text-5xl">
+        <h2 className="px-4 text-3xl italic font-extrabold leading-8 tracking-tight uppercase sm:px-0 md:text-center sm:text-5xl">
           Roadmap
         </h2>
         <div className="flex flex-wrap items-center justify-center w-full mt-12">
@@ -108,7 +108,7 @@ const Roadmap = ({}) => {
                         //className="flex flex-col items-center justify-center w-24 h-24 border-8 border-black border-opacity-25 rounded-full bg-dark-400 ring-8 ring-transparent"
                         className={classNames(
                           milestone.iconBackground,
-                          'h-24 w-24 rounded-full flex items-center justify-center ring-8 ring-transparent flex-col'
+                          'h-24 w-24 rounded-full flex items-center justify-center ring-8 ring-transparent flex-col text-white'
                         )}
                       >
                         {milestone.icon && (
@@ -126,11 +126,11 @@ const Roadmap = ({}) => {
                           <h3 className="text-lg font-semibold md:text-xl">
                             {milestone.title}
                           </h3>
-                          <p className="text-base text-gray-300">
+                          <p className="text-base text-gray-700">
                             {milestone.content}
                           </p>
                         </div>
-                        <div className="hidden text-sm text-right text-gray-100 whitespace-nowrap sm:block">
+                        <div className="hidden text-sm font-medium text-right text-gray-900 whitespace-nowrap sm:block">
                           <p>{milestone.date}</p>
                         </div>
                       </div>

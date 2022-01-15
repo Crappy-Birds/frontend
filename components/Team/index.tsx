@@ -54,31 +54,35 @@ const people = [
 
 const Team = ({}) => {
   return (
-    <div className="py-16 overflow-hidden bg-black lg:py-24" id="team">
+    <div
+      className="py-16 overflow-hidden bg-[#FFF2AF] lg:py-24 border-t-4 border-opacity-50 border-dark-500 border-dashed"
+      id="team"
+    >
       <div className="max-w-xl px-4 mx-auto sm:px-6 lg:px-8 lg:max-w-7xl">
-        <h2 className="px-4 text-3xl italic font-extrabold leading-8 tracking-tight uppercase sm:px-0 md:text-center text-gray-50 sm:text-5xl">
+        <h2 className="px-4 text-3xl italic font-extrabold leading-8 tracking-tight uppercase sm:px-0 md:text-center sm:text-5xl">
           Team
         </h2>
-        <ul className="max-w-3xl px-4 mx-auto mt-12 space-y-12 sm:px-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-10">
+        <ul className="max-w-4xl px-4 mx-auto mt-12 space-y-12 sm:px-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-10">
           {people.map((person) => (
             <li key={person.name}>
               <div className="space-y-4">
-                <div className="relative">
-                  <Image
-                    className="object-cover rounded-lg shadow-lg"
-                    src={person.imageUrl}
-                    width={400}
-                    height={400}
-                    alt={`Team Member Picture - ${person.name}`}
-                  />
+                <div className="relative aspect-w-1 aspect-h-1">
+                  <div className="border-8 border-white rounded-lg shadow-lg">
+                    <Image
+                      className="object-contain"
+                      src={person.imageUrl}
+                      layout="fill"
+                      alt={`Team Member Picture - ${person.name}`}
+                    />
+                  </div>
                 </div>
 
                 <div className="space-y-2">
                   <div className="space-y-1 text-lg font-medium leading-6">
-                    <h3>{person.name}</h3>
-                    <p className="text-brand-500">{person.role}</p>
+                    <h3 className="text-black">{person.name}</h3>
+                    <p className="text-gray-900">{person.role}</p>
                     <div className="text-lg">
-                      <p className="text-gray-500">{person.bio}</p>
+                      <p className="text-gray-600">{person.bio}</p>
                     </div>
                   </div>
                   <ul className="flex space-x-5">
@@ -86,7 +90,7 @@ const Team = ({}) => {
                       <li>
                         <a
                           href={person.twitterUrl}
-                          className="text-gray-400 hover:text-gray-500"
+                          className="text-gray-600 hover:text-gray-500"
                           target="_blank"
                           rel="noreferrer"
                         >
@@ -106,7 +110,7 @@ const Team = ({}) => {
                       <li>
                         <a
                           href={person.linkedinUrl}
-                          className="text-gray-400 hover:text-gray-500"
+                          className="text-gray-600 hover:text-gray-500"
                           target="_blank"
                           rel="noreferrer"
                         >
@@ -130,7 +134,7 @@ const Team = ({}) => {
                       <li>
                         <a
                           href={person.githubUrl}
-                          className="text-gray-400 hover:text-gray-500"
+                          className="text-gray-600 hover:text-gray-500"
                           target="_blank"
                           rel="noreferrer"
                         >
@@ -155,7 +159,7 @@ const Team = ({}) => {
                       <li>
                         <a
                           href={person.behanceUrl}
-                          className="text-gray-400 hover:text-gray-500"
+                          className="text-gray-600 hover:text-gray-500"
                           target="_blank"
                           rel="noreferrer"
                         >

@@ -18,15 +18,17 @@
   h4 {
     @apply text-lg font-bold md:text-3xl font-primary;
   }
+
   h5 {
     @apply text-lg font-bold md:text-2xl font-primary;
   }
+
   h6 {
     @apply text-lg font-semibold md:text-xl font-primary;
   }
 
   body {
-    @apply text-sm font-normal bg-dark-500 font-primary md:text-base text-gray-50;
+    @apply text-sm font-normal text-gray-900 md:text-base bg-dark-500 font-primary;
   }
 
   :root {
