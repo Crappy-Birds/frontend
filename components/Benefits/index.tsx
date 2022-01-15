@@ -8,7 +8,6 @@ const benefits = [
   {
     name: 'Early-Access',
     description:
-      //'Try out the game first and get involved as the game evolve by taking part in closed alpha and beta.',
       'Be the first to try out the game and get involved by taking part in closed alpha and beta.',
   },
   {
