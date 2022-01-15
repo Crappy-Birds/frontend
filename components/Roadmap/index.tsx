@@ -17,8 +17,7 @@ const timeline = [
   {
     id: 1,
     title: 'Genesis NFT Drop',
-    content: 'We launch our Genesis NFT sale',
-    //content: 'We launch our Genesis NFT sale to raise funds to support the development of the game.',
+    content: 'We launch our Genesis NFT sale.',
     date: 'Q1 2022',
     percentage: '0%',
     iconBackground: 'bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg',
@@ -26,7 +25,7 @@ const timeline = [
   {
     id: 2,
     title: 'Get the ball rolling',
-    content: 'Game development continues',
+    content: 'Game development continues.',
     date: 'Q1 2022',
     percentage: '10%',
     iconBackground: 'bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg',
@@ -34,7 +33,7 @@ const timeline = [
   {
     id: 3,
     title: 'Giveaways',
-    content: 'Birds get airdropped to the community',
+    content: 'Birds get airdropped to the community.',
     date: 'Q1 2022',
     percentage: '25%',
     iconBackground: 'bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg',
@@ -49,10 +48,6 @@ const timeline = [
   },
   {
     id: 5,
-    //title: 'Fun-first blockchain MMO',
-    //birds gives game access and serves as your avatar
-    //'Think of Flappy Bird + Super Mario + Hollow Knight + Online Social features. Where your Crappy Bird gives you access to the game and serves as your avatar',
-    //Fun & Social first Online Game with play-and-earn mechanics.
     title: 'Crappy Birds Online - Release',
     content:
       'Fun & Social MMO Game leveraging NFTs and play-and-earn mechanics.',
@@ -62,13 +57,8 @@ const timeline = [
   },
   {
     id: 6,
-    //title: 'The Future',
     title: 'Keep the ball rolling',
     content:
-      //We keep the game up and roll new updates, and more to come
-      //'Something missing? Got a great idea? We want you to help us make it happen.',
-      //Keep the ball rolling - Game maintenace and updates, DAO, Events ...
-      //'We keep the game up and running with new updates. And more to come ...',
       'Game maintenance, Game updates, Exclusive Merch, Events and more to come ...',
     date: '& BEYOND',
     icon: CgInfinity,
@@ -105,7 +95,6 @@ const Roadmap = ({}) => {
                     ) : null}
                     <div className="relative flex items-center space-x-4">
                       <div
-                        //className="flex flex-col items-center justify-center w-24 h-24 border-8 border-black border-opacity-25 rounded-full bg-dark-400 ring-8 ring-transparent"
                         className={classNames(
                           milestone.iconBackground,
                           'h-24 w-24 rounded-full flex items-center justify-center ring-8 ring-transparent flex-col text-white'
@@ -139,9 +128,6 @@ const Roadmap = ({}) => {
                 </li>
               ))}
             </ul>
-            {/* <span className="pt-4 text-sm text-gray-400">
-              Note: A fully fledged roadmap will be released after the sale.
-            </span> */}
           </div>
           <div className="w-full lg:w-1/2">
             <Image
