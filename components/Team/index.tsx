@@ -66,7 +66,7 @@ const Team = ({}) => {
           {people.map((person) => (
             <li key={person.name}>
               <div className="space-y-4">
-                <div className="relative aspect-w-1 aspect-h-1">
+                <div className="relative transition-transform duration-300 aspect-w-1 aspect-h-1 hover:-rotate-3">
                   <div className="border-8 border-white rounded-lg shadow-lg">
                     <Image
                       className="object-contain"
