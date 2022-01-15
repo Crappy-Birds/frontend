@@ -25,7 +25,7 @@ const timeline = [
   {
     id: 2,
     title: 'Get the ball rolling',
-    content: 'Game development continues.',
+    content: 'Game development keeps going.',
     date: 'Q1 2022',
     percentage: '10%',
     iconBackground: 'bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg',
@@ -40,6 +40,14 @@ const timeline = [
   },
   {
     id: 4,
+    title: 'More Giveaways',
+    content: 'More birds get airdropped to the community.',
+    date: 'Q2 2022',
+    percentage: '50%',
+    iconBackground: 'bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg',
+  },
+  {
+    id: 5,
     title: '???',
     content: '???',
     date: '???',
@@ -47,7 +55,7 @@ const timeline = [
     iconBackground: 'bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg',
   },
   {
-    id: 5,
+    id: 6,
     title: 'Crappy Birds Online - Release',
     content:
       'Fun & Social MMO Game leveraging NFTs and play-and-earn mechanics.',
@@ -56,7 +64,7 @@ const timeline = [
     iconBackground: 'bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg',
   },
   {
-    id: 6,
+    id: 7,
     title: 'Keep the ball rolling',
     content:
       'Game maintenance, Game updates, Exclusive Merch, Events and more to come ...',
