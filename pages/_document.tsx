@@ -65,7 +65,7 @@ class MyDocument extends Document {
           />
           <meta
             property="og:image"
-            content="https://www.crappybirds.io/images/crappy-birds-in-the-nest.png"
+            content="https://www.crappybirds.io/images/crappy-birds-in-the-nest.jpg"
           />
 
           {/* <!-- Twitter --> */}
@@ -83,7 +83,7 @@ class MyDocument extends Document {
           />
           <meta
             property="twitter:image"
-            content="https://www.crappybirds.io/images/crappy-birds-in-the-nest.png"
+            content="https://www.crappybirds.io/images/crappy-birds-in-the-nest.jpg"
           />
 
           <link rel="preconnect" href="https://fonts.googleapis.com" />
