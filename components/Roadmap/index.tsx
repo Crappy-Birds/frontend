@@ -97,7 +97,7 @@ const Roadmap = ({}) => {
                   <div className="relative pb-8">
                     {milestoneId !== timeline.length - 1 ? (
                       <span
-                        className="absolute w-1 h-full -ml-px bg-gray-400 top-12 left-12"
+                        className="absolute w-1 h-8 -ml-px bg-black bg-opacity-20 top-24 left-12"
                         aria-hidden="true"
                       />
                     ) : null}
@@ -114,7 +114,7 @@ const Roadmap = ({}) => {
                             aria-hidden="true"
                           />
                         )}
-                        <p className="text-lg italic font-semibold">
+                        <p className="text-xl italic font-semibold text-white">
                           {milestone.percentage}
                         </p>
                       </div>
