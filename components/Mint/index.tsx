@@ -18,18 +18,20 @@ const Mint = () => {
 
   return (
     <div className="relative overflow-hidden" id="mint">
-      <div className="absolute inset-0 min-w-full min-h-full">
-        <Image
-          src={Background}
-          alt=""
-          layout="fill"
-          objectPosition="center"
-          objectFit="fill"
-          placeholder="blur"
-        />
+      <div className="absolute inset-0 z-[-1] min-w-full min-h-full">
+        <div className="relative w-full h-full">
+          <Image
+            src={Background}
+            alt=""
+            layout="fill"
+            objectPosition="center"
+            objectFit="fill"
+            placeholder="blur"
+          />
+        </div>
       </div>
-      <div className="py-16 overflow-hidden bg-opacity-50 bg-gray-50 backdrop-filter backdrop-blur-md lg:py-24">
-        <div className="max-w-xl px-4 mx-auto sm:px-6 lg:px-8 lg:max-w-7xl">
+      <div className="z-10 py-16 overflow-hidden bg-opacity-50 lg:py-24 bg-gray-50 backdrop-filter backdrop-blur-md">
+        <div className="z-20 max-w-xl px-4 mx-auto sm:px-6 lg:px-8 lg:max-w-7xl">
           <h1 className="text-3xl italic font-extrabold leading-8 tracking-tight uppercase md:text-center sm:text-5xl">
             Get a Crappy Bird
           </h1>
@@ -47,7 +49,7 @@ const Mint = () => {
             </div>
 
             <div className="flex flex-col justify-between w-full h-auto px-0 text-center lg:w-1/2 sm:px-8 md:-mx-4">
-              <div className="flex flex-col content-start w-full h-full p-4 space-y-4 text-left bg-gray-100 shadow-xl bg-opacity-20 backdrop-filter backdrop-blur-sm border-brand-500 md:p-8 rounded-xl">
+              <div className="flex flex-col content-start w-full h-full p-4 space-y-4 text-left bg-gray-100 bg-opacity-50 shadow-xl backdrop-filter backdrop-blur-sm border-brand-500 md:p-8 rounded-xl">
                 <h2 className="text-xl italic text-gray-800 md:text-3xl">
                   Join The Nest
                 </h2>
