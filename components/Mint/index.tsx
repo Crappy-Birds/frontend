@@ -18,13 +18,13 @@ const Mint = () => {
 
   return (
     <div className="relative overflow-hidden" id="mint">
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 min-w-full min-h-full">
         <Image
           src={Background}
           alt=""
-          layout="responsive"
+          layout="fill"
           objectPosition="center"
-          objectFit="cover"
+          objectFit="fill"
           placeholder="blur"
         />
       </div>
