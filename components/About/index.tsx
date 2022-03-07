@@ -28,31 +28,25 @@ const About = () => {
       id="about"
     >
       <div className="max-w-xl px-4 mx-auto sm:px-6 lg:px-8 lg:max-w-7xl">
-        <h1 className="text-3xl italic font-extrabold leading-8 tracking-tight uppercase md:text-center sm:text-5xl">
-          About those Crappy Birds
-        </h1>
-
         <div className="mt-8 lg:mt-12 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
-          <div>
-            <h2 className="text-2xl italic font-extrabold tracking-tight uppercase sm:text-3xl">
-              Genesis Drop
-            </h2>
-            <p className="mt-3 text-lg font-medium">
+          <div className="space-y-5">
+            <h1 className="text-2xl italic font-extrabold tracking-tight uppercase sm:text-3xl">
+              About those Crappy Birds
+            </h1>
+            <p className="text-lg font-medium">
+              Crappy Birds is a community project, focusing on building a
+              fun-loving community and a free-to-play-and-earn MMO game
+              leveraging NFTs.
+            </p>
+            <h1 className="text-2xl italic font-extrabold tracking-tight uppercase sm:text-3xl">
+              Genesis Collection
+            </h1>
+            <p className="text-lg font-medium">
               Crappy Birds : Genesis is an NFT collection made of 3,000 unique
               birds, randomly generated from over 170 attributes across 10
               categories.
-              <br />
-              <br />
-              Our main goal is to build a fun-first and social game experience.
-              <br />
-              <br />
-              Funds raised will be used to develop Crappy Birds Online,
-              <br />
-              our 2D side-scrolling platformer MMO game, and to incorporate
-              play-and-earn mechanics by leveraging NFTs.
             </p>
-
-            <dl className="mt-10 space-y-10">
+            <dl className="mt-12 space-y-10">
               {socialFeatures.map((item) => (
                 <div
                   key={item.id}

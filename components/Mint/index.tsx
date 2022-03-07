@@ -32,9 +32,9 @@ const Mint = () => {
       </div>
       <div className="z-10 py-16 overflow-hidden bg-opacity-50 lg:py-24 bg-gray-50 backdrop-filter backdrop-blur-md">
         <div className="z-20 max-w-xl px-4 mx-auto sm:px-6 lg:px-8 lg:max-w-7xl">
-          <h1 className="text-3xl italic font-extrabold leading-8 tracking-tight uppercase md:text-center sm:text-5xl">
+          <h2 className="text-3xl italic font-extrabold leading-8 tracking-tight uppercase md:text-center sm:text-5xl">
             Get a Crappy Bird
-          </h1>
+          </h2>
           <p className="max-w-3xl mx-auto mt-4 text-lg text-gray-700 md:text-center">
             Birds of a feather, you know ...
           </p>
@@ -50,9 +50,9 @@ const Mint = () => {
 
             <div className="flex flex-col justify-between w-full h-auto px-0 text-center lg:w-1/2 sm:px-8 md:-mx-4">
               <div className="flex flex-col content-start w-full h-full p-4 space-y-4 text-left bg-gray-100 bg-opacity-50 shadow-xl backdrop-filter backdrop-blur-sm border-brand-500 md:p-8 rounded-xl">
-                <h2 className="text-xl italic text-gray-800 md:text-3xl">
+                <h3 className="text-xl italic text-gray-800 md:text-3xl">
                   Join The Nest
-                </h2>
+                </h3>
                 <p className="text-gray-800">
                   Enter the amount of birds you would like to mint.
                 </p>
