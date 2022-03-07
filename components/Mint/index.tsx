@@ -5,7 +5,7 @@ import Background from '../../public/images/bg_iridescent.jpg'
 import RandomThumbnail from '../../public/images/random-crappy-birds.png'
 
 const Mint = () => {
-  const mintPrice = 600 // 0.06 ETH
+  const mintPrice = 800 // 0.06 ETH
   const maxMint = 5
   const [birdAmount, setBirdAmount] = useState<number>()
 
@@ -128,7 +128,7 @@ const Mint = () => {
                 </div>
               </div>
               <span className="pt-4 text-sm text-gray-600">
-                Note: Ninety birds are being withheld from the sale. These will
+                Note: Fifty birds are being withheld from the sale. These will
                 be used for giveaways, events — and for the team
               </span>
             </div>

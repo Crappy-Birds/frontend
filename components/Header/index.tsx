@@ -5,11 +5,16 @@ import Logo from '../../public/images/logo.png'
 import Image from 'next/image'
 
 const navigation = [
-  { name: 'About', href: '#about' },
-  { name: 'Buy a Bird', href: '#mint' },
-  { name: 'Roadmap', href: '#roadmap' },
-  { name: 'FAQ', href: '#faq' },
-  { name: 'Team', href: '#team' },
+  { name: 'About', href: '#about', isExternal: false },
+  { name: 'Buy a Bird', href: '#mint', isExternal: false },
+  { name: 'Roadmap', href: '#roadmap', isExternal: false },
+  { name: 'FAQ', href: '#faq', isExternal: false },
+  { name: 'Team', href: '#team', isExternal: false },
+  {
+    name: 'Documentation',
+    href: 'https://docs.crappybirds.io/',
+    isExternal: true,
+  },
 ]
 
 const Header: React.FC = () => {
@@ -39,15 +44,27 @@ const Header: React.FC = () => {
             as="nav"
             className="justify-end hidden space-x-10 md:flex"
           >
-            {navigation.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="text-xs font-bold uppercase transition duration-500 ease-in-out lg:text-sm text-dark-900 hover:rotate-6 hover:bg-brand-300"
-              >
-                {item.name}
-              </a>
-            ))}
+            {navigation.map((item) =>
+              item.isExternal ? (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="text-xs font-bold uppercase transition duration-500 ease-in-out lg:text-sm text-dark-900 hover:rotate-6 hover:bg-brand-300"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {item.name}
+                </a>
+              ) : (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="text-xs font-bold uppercase transition duration-500 ease-in-out lg:text-sm text-dark-900 hover:rotate-6 hover:bg-brand-300"
+                >
+                  {item.name}
+                </a>
+              )
+            )}
           </Popover.Group>
         </div>
 
@@ -87,15 +104,27 @@ const Header: React.FC = () => {
               </div>
               <div className="px-5 py-6">
                 <div className="grid grid-cols-2 gap-4">
-                  {navigation.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      className="text-sm font-semibold uppercase text-dark-900 hover:text-pink-600"
-                    >
-                      {item.name}
-                    </a>
-                  ))}
+                  {navigation.map((item) =>
+                    item.isExternal ? (
+                      <a
+                        key={item.name}
+                        href={item.href}
+                        className="text-sm font-semibold uppercase text-dark-900 hover:text-pink-600"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {item.name}
+                      </a>
+                    ) : (
+                      <a
+                        key={item.name}
+                        href={item.href}
+                        className="text-sm font-semibold uppercase text-dark-900 hover:text-pink-600"
+                      >
+                        {item.name}
+                      </a>
+                    )
+                  )}
                 </div>
               </div>
             </div>

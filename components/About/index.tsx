@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { FaDiscord, FaTwitter } from 'react-icons/fa'
+import { FaDiscord, FaTwitter, FaBook } from 'react-icons/fa'
 import BirdsGif from '../../public/images/crappybirds.gif'
 
 const socialFeatures = [
@@ -19,6 +19,14 @@ const socialFeatures = [
     bg: 'bg-blue-400',
     link: 'https://twitter.com/crappybirds',
   },
+  {
+    id: 3,
+    name: 'Documentation',
+    description: 'Learn about the project in details.',
+    icon: FaBook,
+    bg: 'bg-brand-500',
+    link: 'https://docs.crappybirds.io/',
+  },
 ]
 
 const About = () => {
@@ -28,19 +36,18 @@ const About = () => {
       id="about"
     >
       <div className="max-w-xl px-4 mx-auto sm:px-6 lg:px-8 lg:max-w-7xl">
+        <h1 className="text-3xl italic font-extrabold tracking-tight uppercase md:text-center sm:text-5xl">
+          About those Crappy Birds
+        </h1>
+        <p className="max-w-2xl mx-auto mt-8 text-lg font-medium md:text-center">
+          Crappy Birds is a community project, focusing on building a fun-loving
+          community and a free-to-play-and-earn MMO game leveraging NFTs.
+        </p>
         <div className="mt-8 lg:mt-12 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
           <div className="space-y-5">
-            <h1 className="text-2xl italic font-extrabold tracking-tight uppercase sm:text-3xl">
-              About those Crappy Birds
-            </h1>
-            <p className="text-lg font-medium">
-              Crappy Birds is a community project, focusing on building a
-              fun-loving community and a free-to-play-and-earn MMO game
-              leveraging NFTs.
-            </p>
-            <h1 className="text-2xl italic font-extrabold tracking-tight uppercase sm:text-3xl">
+            <h2 className="text-2xl italic font-extrabold tracking-tight uppercase sm:text-3xl">
               Genesis Collection
-            </h1>
+            </h2>
             <p className="text-lg font-medium">
               Crappy Birds : Genesis is an NFT collection made of 3,000 unique
               birds, randomly generated from over 170 attributes across 10

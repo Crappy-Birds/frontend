@@ -2,18 +2,19 @@ import { HiCheck } from 'react-icons/hi'
 
 const benefits = [
   {
-    name: 'Exclusive In-Game rewards',
-    description: 'Receive in-game rewards, such as cosmectics and title.',
+    name: 'Exclusive In-Game Rewards',
+    description:
+      'You will receive exclusive in-game rewards, such as cosmectics items and title.',
   },
   {
     name: 'Early-Access',
     description:
-      'Be the first to try out the game and get involved by taking part in closed alpha and beta.',
+      'Be the first to try out the game and get involved by getting access to DEV, ALPHA & BETA builds',
   },
   {
-    name: 'Whitelist',
+    name: 'Whitelist Pass',
     description:
-      'Holding a Genesis Crappy Bird grants you a whitelist spot for future drop.',
+      'Holding a Genesis Crappy Bird grants you a whitelist spot for future drop. (e.g. IDO, Plot sale)',
   },
   {
     name: 'Community Membership',
@@ -26,9 +27,9 @@ const benefits = [
       'Using your Crappy Bird as profile picture might be a good way to show off your bad taste.',
   },
   {
-    name: 'Commercial Usage Rights',
+    name: 'Crappy Birds Figurine',
     description:
-      'The holder has full rights to use their Genesis Crappy Birds for personal and commercial purposes.',
+      'A snapshot will be taken at some point, holders from that date will then be able to claim a physical Crappy Birds Figurine.',
   },
 ]
 

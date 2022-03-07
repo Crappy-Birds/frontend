@@ -18,7 +18,7 @@ const timeline = [
     id: 1,
     title: 'Genesis NFT Drop',
     content: 'We launch our Genesis NFT sale.',
-    date: 'Q1 2022',
+    date: 'Q2 2022',
     percentage: '0%',
     iconBackground: 'bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg',
   },
@@ -26,7 +26,7 @@ const timeline = [
     id: 2,
     title: 'Get the ball rolling',
     content: 'Game development keeps going.',
-    date: 'Q1 2022',
+    date: 'Q2 2022',
     percentage: '10%',
     iconBackground: 'bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg',
   },
@@ -34,16 +34,16 @@ const timeline = [
     id: 3,
     title: 'Giveaways',
     content: 'Birds get airdropped to the community.',
-    date: 'Q1 2022',
+    date: 'Q2 2022',
     percentage: '25%',
     iconBackground: 'bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg',
   },
   {
     id: 4,
-    title: 'More Giveaways',
+    title: 'Physical Crappy Birds Figurine',
     content: 'More birds get airdropped to the community.',
     date: 'Q2 2022',
-    percentage: '50%',
+    percentage: '75%',
     iconBackground: 'bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg',
   },
   {
@@ -135,6 +135,18 @@ const Roadmap = ({}) => {
                   </div>
                 </li>
               ))}
+              <span className="text-sm text-gray-600 ">
+                Note: You can read a more{' '}
+                <a
+                  className="underline"
+                  href="https://docs.crappybirds.io/genesis-collection/roadmap"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  detailled roadmap here
+                </a>
+                .
+              </span>
             </ul>
           </div>
           <div className="w-full lg:w-1/2">
