@@ -54,7 +54,10 @@ const people = [
 
 const Team = ({}) => {
   return (
-    <div className="py-16 overflow-hidden bg-[#FFF2AF] lg:py-24" id="team">
+    <div
+      className="py-16 overflow-hidden bg-gradient-to-b from-[#FFF8D2] to-[#FFF2AF] lg:py-24"
+      id="team"
+    >
       <div className="max-w-xl px-4 mx-auto sm:px-6 lg:px-8 lg:max-w-7xl">
         <h2 className="px-4 text-3xl italic font-extrabold leading-8 tracking-tight uppercase sm:px-0 md:text-center sm:text-5xl">
           Team

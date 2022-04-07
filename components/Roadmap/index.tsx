@@ -40,8 +40,8 @@ const timeline = [
   },
   {
     id: 4,
-    title: 'Physical Crappy Birds Figurine',
-    content: 'More birds get airdropped to the community.',
+    title: 'Crappy Birds Figurine',
+    content: 'Holders will receive a physical Crappy Birds figurine.',
     date: 'Q2 2022',
     percentage: '75%',
     iconBackground: 'bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg',
