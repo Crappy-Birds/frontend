@@ -7,9 +7,8 @@ const timeline = [
   {
     id: 0,
     title: 'Crappy Birds Online - Demo',
-    content:
-      'We publish a playable prototype of our game, accessible to everyone.',
-    date: 'Q1 2022',
+    content: 'Game demo release, accessible to everyone.',
+    date: 'Q2 2022',
     percentage: '',
     icon: HiFlag,
     iconBackground: 'bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg',
@@ -17,7 +16,7 @@ const timeline = [
   {
     id: 1,
     title: 'Genesis NFT Drop',
-    content: 'We launch our Genesis NFT sale.',
+    content: 'Genesis NFT sale to kickstart the project',
     date: 'Q2 2022',
     percentage: '0%',
     iconBackground: 'bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg',
@@ -42,7 +41,7 @@ const timeline = [
     id: 4,
     title: 'Crappy Birds Figurine',
     content: 'Holders will receive a physical Crappy Birds figurine.',
-    date: 'Q2 2022',
+    date: 'Q3 2022',
     percentage: '75%',
     iconBackground: 'bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg',
   },
