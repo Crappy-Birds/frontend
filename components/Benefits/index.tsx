@@ -3,33 +3,29 @@ import { HiCheck } from 'react-icons/hi'
 const benefits = [
   {
     name: 'Exclusive In-Game Rewards',
-    description:
-      'You will receive exclusive in-game rewards, such as cosmectics items and title.',
+    description: 'Receive exclusive items to set you apart in-game',
   },
   {
     name: 'Early-Access',
-    description:
-      'Be the first to try out the game and get involved by getting access to DEV, ALPHA & BETA builds',
+    description: 'Get closer to the devs and be the first to try out the game',
   },
   {
     name: 'Whitelist Pass',
-    description:
-      'Holding a Genesis Crappy Bird grants you a whitelist spot for future drop. (e.g. IDO, Plot sale)',
+    description: 'Secure your spot for future drops (e.g. IDO, Plot sale)',
   },
   {
     name: 'Community Membership',
     description:
-      'Access to private Discord channels and get development insights from the team before anyone else.',
+      'Access to private Discord channels, get development insights from the team before everyone',
   },
   {
     name: 'A crappy profile picture',
     description:
-      'Using your Crappy Bird as profile picture might be a good way to show off your bad taste.',
+      'Show off your bad taste, with a crappy pixel art bird profile picture',
   },
   {
     name: 'Crappy Birds Figurine',
-    description:
-      'A snapshot will be taken at some point, holders from that date will then be able to claim a physical Crappy Birds Figurine.',
+    description: 'Claim a physical Crappy Birds Figurine, limited edition',
   },
 ]
 
@@ -39,14 +35,14 @@ const Benefits = () => {
       <div className="px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:py-24 lg:px-8">
         <div className="max-w-3xl mx-auto text-center">
           <h3 className="text-base font-semibold tracking-wide uppercase text-brand-500">
-            Genesis&apos; holders benefits
+            Welcome to The Nest
           </h3>
           <h2 className="text-2xl italic font-extrabold tracking-tight uppercase sm:text-3xl">
-            Welcome to The Nest
+            Genesis&apos; holders benefits
           </h2>
           <p className="mt-4 text-lg text-gray-700">
             Holding a Crappy Bird grants an exclusive access to The Nest and
-            many perks that will be unlocked through the roadmap.
+            many perks that will be unlocked through time.
           </p>
         </div>
         <dl className="mt-12 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-3 lg:gap-x-8">
