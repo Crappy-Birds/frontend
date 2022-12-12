@@ -5,8 +5,8 @@ import Background from '../../public/images/bg_iridescent.jpg'
 import RandomThumbnail from '../../public/images/random-crappy-birds.png'
 
 const Mint = () => {
-  const mintPrice = 800 // 0.06 ETH
-  const maxMint = 5
+  //const mintPrice = 800 // 0.06 ETH
+  //const maxMint = 5
   const [birdAmount, setBirdAmount] = useState<number>()
 
   const handleBirdAmountChange = (
@@ -25,8 +25,6 @@ const Mint = () => {
             alt=""
             layout="fill"
             objectPosition="center"
-            objectFit="fill"
-            placeholder="blur"
           />
         </div>
       </div>
@@ -44,7 +42,6 @@ const Mint = () => {
                 className="relative mx-auto"
                 src={DrunkBird}
                 alt="Drunk Crappy Bird showing the mint form"
-                placeholder="blur"
               />
             </div>
 
@@ -62,14 +59,14 @@ const Mint = () => {
                       className="relative mx-auto rounded-lg bg-brand-500"
                       src={RandomThumbnail}
                       alt=""
-                      placeholder="blur"
                     />
                   </div>
                   <div className="text-gray-700 md:content-end md:text-right">
                     <p className="text-lg font-medium">Price per Crappy Bird</p>
                     <p className="text-2xl italic font-bold">
                       <span className="text-brand-600">
-                        {mintPrice / 10000}
+                        {/* {mintPrice / 10000} */}
+                        ???
                       </span>{' '}
                       ETH Each
                     </p>
@@ -86,13 +83,13 @@ const Mint = () => {
                         Mint amount
                       </label>
                       <span className="text-sm text-gray-700">
-                        Limited to {maxMint} per user
+                        Limited to {/* {maxMint} */}??? per user
                       </span>
                     </div>
                     <input
                       type="number"
                       min={1}
-                      max={maxMint}
+                      //max={maxMint}
                       step={1}
                       name="mint-amount"
                       id="mint-amount"
@@ -114,7 +111,7 @@ const Mint = () => {
                         Total :
                       </p>
                       <p className="text-lg font-bold uppercase sm:text-2xl">
-                        {(birdAmount * mintPrice) / 10000} ETH
+                        {/* {(birdAmount * mintPrice) / 10000} */}??? ETH
                       </p>
                     </div>
                   )}
@@ -127,10 +124,10 @@ const Mint = () => {
                   </button>
                 </div>
               </div>
-              <span className="pt-4 text-sm text-gray-600">
+              {/* <span className="pt-4 text-sm text-gray-600">
                 Note: Fifty birds are being withheld from the sale. These will
                 be used for giveaways, events — and for the team
-              </span>
+              </span> */}
             </div>
           </div>
         </div>

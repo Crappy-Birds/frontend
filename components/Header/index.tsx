@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 const navigation = [
   { name: 'About', href: '#about', isExternal: false },
-  { name: 'Buy a Bird', href: '#mint', isExternal: false },
+  { name: 'Get a Bird', href: '#mint', isExternal: false },
   { name: 'Roadmap', href: '#roadmap', isExternal: false },
   /* { name: 'FAQ', href: '#faq', isExternal: false }, */
   { name: 'Team', href: '#team', isExternal: false },
@@ -30,7 +30,6 @@ const Header: React.FC = () => {
                 alt="Crappy Birds Logo"
                 width={498}
                 height={115}
-                placeholder="blur"
               />
             </div>
           </div>

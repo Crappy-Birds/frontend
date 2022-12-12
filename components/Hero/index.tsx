@@ -14,7 +14,6 @@ const Hero = () => {
               placeholder="blur"
               quality={100}
               layout="responsive"
-              objectFit="cover"
               objectPosition="center"
               priority
             />

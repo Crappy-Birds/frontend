@@ -8,8 +8,8 @@ import Etamiin from '../../public/images/team_etamiin.png'
 const people = [
   {
     name: 'fafifox',
-    role: 'CEO & Co-Founder',
-    bio: 'Software Engineer, also make crappy pixel art',
+    role: 'Founder & CEO',
+    bio: 'Designer, Developer, Jack-of-all-trade',
     imageUrl: Fafifox,
     twitterUrl: 'https://twitter.com/fafif0x',
     linkedinUrl: 'https://www.linkedin.com/in/hugomalatrait',
@@ -17,7 +17,7 @@ const people = [
   },
   {
     name: 'yam',
-    role: 'CTO & Co-Founder',
+    role: 'Co-Founder & CTO',
     bio: 'Software & Machine Learning Engineer',
     imageUrl: Yam,
     twitterUrl: 'https://twitter.com/CaptaineDoge',
@@ -34,14 +34,6 @@ const people = [
     githubUrl: 'https://github.com/LuaxY',
   },
   {
-    name: 'eliz0r',
-    role: 'Illustrator',
-    bio: 'Concept Artist & Illustrator',
-    imageUrl: Eliz0r,
-    twitterUrl: 'https://twitter.com/Eliz0r',
-    behanceUrl: 'https://www.behance.net/Eliz0r',
-  },
-  {
     name: 'etamiin',
     role: 'Game Developer',
     bio: 'Unity Wizard',
@@ -49,6 +41,14 @@ const people = [
     twitterUrl: 'https://twitter.com/Etamiin0',
     linkedinUrl: 'https://www.linkedin.com/in/abdelbourahla/',
     githubUrl: 'https://github.com/Etamiin',
+  },
+  {
+    name: 'eliz0r',
+    role: 'Illustrator',
+    bio: 'Concept Artist & Illustrator',
+    imageUrl: Eliz0r,
+    twitterUrl: 'https://twitter.com/Eliz0r',
+    behanceUrl: 'https://www.behance.net/Eliz0r',
   },
 ]
 

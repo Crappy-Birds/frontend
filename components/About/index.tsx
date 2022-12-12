@@ -88,7 +88,6 @@ const About = () => {
                 <Image
                   src={BirdsGif}
                   layout="fill"
-                  objectFit="cover"
                   alt="Crappy Birds: Genesis NFT collection preview"
                 />
               </div>

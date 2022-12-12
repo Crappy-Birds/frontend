@@ -18,56 +18,68 @@ const AboutGame = () => {
                 <Image
                   src={CrappyBirdsOnline}
                   layout="fill"
-                  objectFit="cover"
                   alt="Crappy Birds Online - Game scene"
                 />
               </div>
             </div>
           </div>
-          <div>
-            <div className="space-y-5 text-lg font-medium">
-              <h2 className="text-2xl italic font-extrabold tracking-tight uppercase sm:text-3xl">
-                Crappy Birds Online
-              </h2>
-              <p>
-                Crappy Birds is a fun and social 2D Side-Scrolling MMORPG
-                leveraging NFTs for cosmetic items, lands and other properties.
-              </p>
-              <ul className="ml-6 space-y-2 list-disc">
-                <li>Explore a vast interconnected world</li>
-                <li>Beat up monsters and dungeon bosses</li>
-                <li>Customize your character</li>
-                <li>Socialize and hang out with others</li>
-                <li>
-                  Scavenge for waste and recycle it into raw materials used in
-                  crafts
-                </li>
-                <li>
-                  Craft equipment, weapons and gadgets to enhance your character
-                </li>
-                <li>Trade and earn, as part of an open-world economy</li>
-              </ul>
-              <p>
-                Learn more :{' '}
-                <a
-                  className="underline"
-                  href="https://docs.crappybirds.io/genesis-collection/roadmap"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Documentation
-                </a>
-                ,{' '}
-                <a
-                  className="underline"
-                  href="https://crappybirds.io/docs/crappy-birds-litepaper.pdf"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Litepaper
-                </a>
-              </p>
-            </div>
+          <div className="flex flex-col space-y-5 text-lg font-medium">
+            <h2 className="text-2xl italic font-extrabold tracking-tight uppercase sm:text-3xl">
+              Crappy Birds Online
+            </h2>
+            <p>
+              {/* Crappy Birds is a fun and social 2D Side-Scrolling MMORPG
+                leveraging NFTs for cosmetic items, lands and other properties. */}
+              Crappy Birds is a convivial and alluring online game, with a
+              strong design emphasis on explorative platforming, social
+              interactions and digital collectible ownership.
+              <br />
+              <br />
+              Funds from the Genesis Collection will be used to continue the
+              game development and rewards holders.
+            </p>
+            {/* <ul className="ml-6 space-y-2 list-disc">
+              <li>Explore a vast interconnected world</li>
+              <li>Beat up monsters and dungeon bosses</li>
+              <li>Customize your character</li>
+              <li>Socialize and hang out with others</li>
+              <li>
+                Scavenge for waste and recycle it into raw materials used in
+                crafts
+              </li>
+              <li>
+                Craft equipment, weapons and gadgets to enhance your character
+              </li>
+              <li>Trade and earn, as part of an open-world economy</li>
+            </ul> */}
+            <a
+              className="px-4 py-4 mx-auto text-xs font-bold border border-b-4 cursor-pointer md:text-base bg-gradient-to-t from-amber-400 to-amber-300 hover:to-amber-200 rounded-xl text-amber-900 border-amber-900"
+              //href=""
+              //target="_blank"
+              //rel="noreferrer"
+            >
+              Launch the Demo - (Coming Soon)
+            </a>
+            <p>
+              Learn more about the game :{' '}
+              <a
+                className="underline"
+                href="https://docs.crappybirds.io/crappy-birds-game/overview"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Documentation
+              </a>
+              {', '}
+              <a
+                className="underline"
+                href="https://www.crappybirds.io/docs/crappy-birds-litepaper.pdf"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Litepaper
+              </a>
+            </p>
           </div>
         </div>
       </div>

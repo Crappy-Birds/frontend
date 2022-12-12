@@ -10,8 +10,9 @@ const benefits = [
     description: 'Get closer to the devs and be the first to try out the game',
   },
   {
-    name: 'Whitelist Pass',
-    description: 'Secure your spot for future drops (e.g. IDO, Plot sale)',
+    name: 'Access Pass',
+    description:
+      'Exclusive access to every expansion of our world and gets an edge on our upcoming drops',
   },
   {
     name: 'Community Membership',
@@ -25,7 +26,7 @@ const benefits = [
   },
   {
     name: 'Crappy Birds Figurine',
-    description: 'Claim a physical Crappy Birds Figurine, limited edition',
+    description: 'Receive a limited edition Crappy Birds physical figurine',
   },
 ]
 
@@ -35,10 +36,10 @@ const Benefits = () => {
       <div className="px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:py-24 lg:px-8">
         <div className="max-w-3xl mx-auto text-center">
           <h3 className="text-base font-semibold tracking-wide uppercase text-brand-500">
-            Welcome to The Nest
+            Genesis&apos; Holders Benefits
           </h3>
           <h2 className="text-2xl italic font-extrabold tracking-tight uppercase sm:text-3xl">
-            Genesis&apos; holders benefits
+            Utility & Rewards
           </h2>
           <p className="mt-4 text-lg text-gray-700">
             Holding a Crappy Bird grants an exclusive access to The Nest and

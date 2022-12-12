@@ -8,7 +8,7 @@ const timeline = [
     id: 0,
     title: 'Crappy Birds Online - Demo',
     content: 'Game demo release, accessible to everyone.',
-    date: 'Q2 2022',
+    //date: 'Q2 2022',
     percentage: '',
     icon: HiFlag,
     iconBackground: 'bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg',
@@ -17,7 +17,7 @@ const timeline = [
     id: 1,
     title: 'Genesis NFT Drop',
     content: 'Genesis NFT sale to kickstart the project',
-    date: 'Q2 2022',
+    //date: 'Q2 2022',
     percentage: '0%',
     iconBackground: 'bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg',
   },
@@ -25,23 +25,23 @@ const timeline = [
     id: 2,
     title: 'Get the ball rolling',
     content: 'Game development keeps going.',
-    date: 'Q2 2022',
-    percentage: '10%',
+    //date: 'Q2 2022',
+    percentage: '25%',
     iconBackground: 'bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg',
   },
   {
     id: 3,
     title: 'Giveaways',
     content: 'Birds get airdropped to the community.',
-    date: 'Q2 2022',
-    percentage: '25%',
+    //date: 'Q2 2022',
+    percentage: '50%',
     iconBackground: 'bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg',
   },
   {
     id: 4,
     title: 'Crappy Birds Figurine',
     content: 'Holders will receive a physical Crappy Birds figurine.',
-    date: 'Q3 2022',
+    //date: 'Q3 2022',
     percentage: '75%',
     iconBackground: 'bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg',
   },
@@ -49,7 +49,7 @@ const timeline = [
     id: 5,
     title: '???',
     content: '???',
-    date: '???',
+    //date: '???',
     percentage: '???',
     iconBackground: 'bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg',
   },
@@ -58,7 +58,7 @@ const timeline = [
     title: 'Crappy Birds Online - Release',
     content:
       'Fun & Social MMO Game leveraging NFTs and play-and-earn mechanics.',
-    date: 'PLANNED',
+    //date: 'PLANNED',
     percentage: '100%',
     iconBackground: 'bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg',
   },
@@ -67,7 +67,7 @@ const timeline = [
     title: 'Keep the ball rolling',
     content:
       'Game maintenance, Game updates, Exclusive Merch, Events and more to come ...',
-    date: '& BEYOND',
+    //date: '& BEYOND',
     icon: CgInfinity,
     percentage: '',
     iconBackground: 'bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg',
@@ -126,25 +126,24 @@ const Roadmap = ({}) => {
                             {milestone.content}
                           </p>
                         </div>
-                        <div className="hidden text-sm font-medium text-right text-gray-900 whitespace-nowrap sm:block">
+                        {/* <div className="hidden text-sm font-medium text-right text-gray-900 whitespace-nowrap sm:block">
                           <p>{milestone.date}</p>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                   </div>
                 </li>
               ))}
               <span className="text-sm text-gray-600 ">
-                Note: You can read a more{' '}
+                Note:{' '}
                 <a
                   className="underline"
                   href="https://docs.crappybirds.io/genesis-collection/roadmap"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  detailled roadmap here
+                  Read the detailled roadmap here
                 </a>
-                .
               </span>
             </ul>
           </div>
@@ -152,7 +151,6 @@ const Roadmap = ({}) => {
             <Image
               className="relative mx-auto"
               src={DrunkBird}
-              placeholder="blur"
               alt="A drunk Crappy Bird is presenting the roadmap"
             />
           </div>
