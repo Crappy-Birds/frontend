@@ -1,38 +1,54 @@
-import { HiCheck } from 'react-icons/hi'
+//import { HiCheck } from 'react-icons/hi'
 
 const benefits = [
   {
-    name: 'Exclusive In-Game Rewards',
-    description: 'Receive exclusive items to set you apart in-game',
-  },
-  {
-    name: 'Early-Access',
-    description: 'Get closer to the devs and be the first to try out the game',
-  },
-  {
-    name: 'Access Pass',
+    name: 'Founding Feather Pass',
     description:
-      'Exclusive access to every expansion of our world and gets an edge on our upcoming drops',
+      'Every holder is granted an exclusive access to every expansion of our world and gets an edge on our upcoming drops (access list, land sale, token, staking, airdrop … ?)',
   },
   {
-    name: 'Community Membership',
-    description:
-      'Access to private Discord channels, get development insights from the team before everyone',
+    name: 'Help shape the game',
+    description: `Holders will be consulted to voice their opinions and make choices during the game development.
+    You will be able to choose between different designs & names of game elements. You may also be consulted to give your opinion on strategic choices.`,
   },
   {
-    name: 'A crappy profile picture',
+    name: 'Backstage Access',
     description:
-      'Show off your bad taste, with a crappy pixel art bird profile picture',
+      'Holders of our NFTs will have access to the production backstage. We will share with you our progress and the production process',
+  },
+  {
+    name: 'Early Access',
+    description:
+      'Get closer to the team and play the game in early-access during the development phases (tests, alpha, beta …)',
+  },
+  {
+    name: 'In-Game Rewards',
+    description:
+      'Receive exclusive cosmetics items, title to set you apart in game, and get your name in the game backer credits',
+  },
+  {
+    name: 'Digital Goodies',
+    description:
+      'Receive a digital Artbook of the game, a Wallpaper and the digital soundtrack',
   },
   {
     name: 'Crappy Birds Figurine',
-    description: 'Receive a limited edition Crappy Birds physical figurine',
+    description:
+      'Receive a <Crappy Birds Physical Figurine - Limited Edition> for free by holding 3 NFTs',
+  },
+  {
+    name: 'Special Rewards',
+    description:
+      'We have special rewards in the pipeline for our biggest supporter: Design <something> for the game in collaboration with the team',
   },
 ]
 
 const Benefits = () => {
   return (
-    <div className="pb-16 overflow-hidden lg:pb-24 bg-gradient-to-b from-[#FFFBF3] to-[#FFFBF3]">
+    <div
+      className="overflow-hidden bg-gradient-to-b from-[#FFFBF3] to-[#FFFBF3]"
+      id="benefits"
+    >
       <div className="px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:py-24 lg:px-8">
         <div className="max-w-3xl mx-auto text-center">
           <h3 className="text-base font-semibold tracking-wide uppercase text-brand-500">
@@ -42,28 +58,33 @@ const Benefits = () => {
             Utility & Rewards
           </h2>
           <p className="mt-4 text-lg text-gray-700">
-            Holding a Crappy Bird grants an exclusive access to The Nest and
-            many perks that will be unlocked through time.
+            There&apos;s way more than a crappy profile picture. Your NFT is the
+            gateway to the Crappy Birds universe.
           </p>
         </div>
-        <dl className="mt-12 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-3 lg:gap-x-8">
+        <div className="grid grid-cols-1 mt-12 gap-y-16 md:grid-cols-2 md:gap-x-12 md:gap-y-16">
           {benefits.map((benefit) => (
-            <div key={benefit.name} className="relative">
-              <dt>
+            <div
+              key={benefit.name}
+              className="relative flex flex-col gap-6 sm:flex-row md:flex-col lg:flex-row"
+            >
+              {/* <div className="flex items-center justify-center w-12 h-12 text-white bg-brand-500 rounded-xl sm:shrink-0">
                 <HiCheck
-                  className="absolute w-6 h-6 text-green-500"
+                  className="absolute w-8 h-8 text-white"
                   aria-hidden="true"
                 />
-                <p className="text-lg font-semibold leading-6 text-gray-800 ml-9">
+              </div> */}
+              <div className="sm:min-w-0 sm:flex-1">
+                <p className="text-xl font-semibold leading-8 text-gray-900">
                   {benefit.name}
                 </p>
-              </dt>
-              <dd className="mt-2 text-base text-gray-700 ml-9">
-                {benefit.description}
-              </dd>
+                <p className="mt-2 text-base leading-7 text-gray-600">
+                  {benefit.description}
+                </p>
+              </div>
             </div>
           ))}
-        </dl>
+        </div>
       </div>
     </div>
   )

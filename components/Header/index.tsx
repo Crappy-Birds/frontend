@@ -6,12 +6,13 @@ import Image from 'next/image'
 
 const navigation = [
   { name: 'About', href: '#about', isExternal: false },
+  { name: 'Utility & Rewards', href: '#benefits', isExternal: false },
   { name: 'Get a Bird', href: '#mint', isExternal: false },
   { name: 'Roadmap', href: '#roadmap', isExternal: false },
   /* { name: 'FAQ', href: '#faq', isExternal: false }, */
   { name: 'Team', href: '#team', isExternal: false },
   {
-    name: 'Documentation',
+    name: 'Docs',
     href: 'https://docs.crappybirds.io/',
     isExternal: true,
   },

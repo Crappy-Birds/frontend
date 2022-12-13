@@ -71,8 +71,6 @@ const Team = ({}) => {
                     <Image
                       src={person.imageUrl}
                       layout="responsive"
-                      objectFit="contain"
-                      placeholder="blur"
                       alt={`Crappy Birds Team Member Picture - ${person.name}`}
                     />
                   </div>
