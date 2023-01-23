@@ -53,12 +53,12 @@ const AboutGame = () => {
               <li>Trade and earn, as part of an open-world economy</li>
             </ul> */}
             <a
-              className="px-4 py-4 mx-auto text-xs font-bold border border-b-4 cursor-pointer md:text-base bg-gradient-to-t from-amber-400 to-amber-300 hover:to-amber-200 rounded-xl text-amber-900 border-amber-900"
-              //href=""
-              //target="_blank"
-              //rel="noreferrer"
+              className="p-4 mr-auto text-xs font-bold border border-b-4 cursor-pointer md:text-base bg-gradient-to-t from-amber-400 to-amber-300 hover:to-amber-200 rounded-xl text-amber-900 border-amber-900"
+              href="https://play.crappybirds.io/"
+              target="_blank"
+              rel="noreferrer"
             >
-              Launch the Demo - (Coming Soon)
+              Launch the Early Demo
             </a>
             <p>
               Learn more about the game :{' '}
