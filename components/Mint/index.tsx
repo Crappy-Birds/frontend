@@ -70,7 +70,7 @@ const Mint = () => {
                       </span>{' '}
                       ETH Each
                     </p>
-                    <p className="text-lg text-gray-800">3,000 remaining</p>
+                    <p className="text-lg text-gray-800">??? remaining</p>
                   </div>
                 </div>
                 <div className="space-y-4">
