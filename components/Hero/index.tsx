@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import HeroImage from '../../public/images/crappy-birds-in-the-nest.jpg'
 
 const Hero = () => {

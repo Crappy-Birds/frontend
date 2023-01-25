@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import Fafifox from '../../public/images/team_fafifox.png'
 import Yam from '../../public/images/team_yam.png'
 import Luax from '../../public/images/team_luax.png'

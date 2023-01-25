@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import DrunkBird from '../../public/images/drunk-crappy-bird-02.png'
 import { CgInfinity } from 'react-icons/cg'
 import { HiFlag } from 'react-icons/hi'

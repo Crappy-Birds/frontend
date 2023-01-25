@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import { useState } from 'react'
 import DrunkBird from '../../public/images/drunk-crappy-bird-01.png'
 import Background from '../../public/images/bg_iridescent.jpg'

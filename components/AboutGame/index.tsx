@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import CrappyBirdsOnline from '../../public/images/crappy-birds-online-game.jpg'
 
 const AboutGame = () => {

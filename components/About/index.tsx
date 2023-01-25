@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import { FaDiscord, FaTwitter } from 'react-icons/fa'
 import BirdsGif from '../../public/images/crappy-birds-genesis-nft.gif'
 
