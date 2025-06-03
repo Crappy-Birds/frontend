@@ -9,6 +9,7 @@ import Team from '@/components/Team'
 import Footer from '@/components/Footer'
 import Benefits from '@/components/Benefits'
 import AboutGame from '@/components/AboutGame'
+import { Banner } from '@/components/Banner'
 
 const Home: NextPage = () => {
   return (
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
         <title>Crappy Birds - Fun & Social MMO game leveraging NFTs</title>
       </Head>
 
+      <Banner />
       <Header />
       <main>
         <Hero />

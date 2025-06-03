@@ -20,7 +20,7 @@ const navigation = [
 
 const Header: React.FC = () => {
   return (
-    <header>
+    <header className="pt-[36px] mdpt-[40px]">
       <Popover className="relative bg-brand-400">
         <div className="flex items-center justify-between px-4 py-6 mx-auto max-w-7xl sm:px-6 md:space-x-10 lg:px-8 h-[75px]">
           <div className="flex justify-start lg:w-0 lg:flex-1">
